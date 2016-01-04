@@ -2412,12 +2412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "b7306ea666f79085bb864d48c5302d594c9e9460"
+                "reference": "dc52b76ff327b54ac5ae05d0ca260d657ecc69ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/b7306ea666f79085bb864d48c5302d594c9e9460",
-                "reference": "b7306ea666f79085bb864d48c5302d594c9e9460",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/dc52b76ff327b54ac5ae05d0ca260d657ecc69ea",
+                "reference": "dc52b76ff327b54ac5ae05d0ca260d657ecc69ea",
                 "shasum": ""
             },
             "require": {
@@ -2470,7 +2470,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-01 14:46:20"
+            "time": "2016-01-04 07:14:46"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/CoreBundle.git",
-                "reference": "7ad5a0a7a815772ad2265dc05c6b193cc6917b3f"
+                "reference": "305626d93ef5d53891f145c27959e6aaed3265a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/7ad5a0a7a815772ad2265dc05c6b193cc6917b3f",
-                "reference": "7ad5a0a7a815772ad2265dc05c6b193cc6917b3f",
+                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/305626d93ef5d53891f145c27959e6aaed3265a3",
+                "reference": "305626d93ef5d53891f145c27959e6aaed3265a3",
                 "shasum": ""
             },
             "require": {
@@ -2525,7 +2525,7 @@
                 "ihsanudin",
                 "toolkit"
             ],
-            "time": "2016-01-04 04:13:27"
+            "time": "2016-01-04 06:06:42"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",
