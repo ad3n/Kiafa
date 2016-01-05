@@ -2,6 +2,6 @@
 
 namespace AppBundle\Form;
 
-class TransferType
+class PengeluaranType
 {
 }

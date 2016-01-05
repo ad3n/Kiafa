@@ -2,8 +2,6 @@
 
 namespace AppBundle\Controller;
 
-
-class TransferController
+class PengeluaranController
 {
-
 }
