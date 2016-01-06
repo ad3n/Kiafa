@@ -123,4 +123,9 @@ class Donatur implements EntityInterface
 
         $this->isHambaAllah = (boolean) $hambaAllah;
     }
+
+    public function __toString()
+    {
+        return $this->getFullName().' | '.$this->getPhoneNumber();
+    }
 }

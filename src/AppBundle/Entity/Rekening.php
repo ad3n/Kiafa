@@ -67,4 +67,9 @@ class Rekening implements EntityInterface
     {
         $this->accountNumber = $accountNumber;
     }
+
+    public function __toString()
+    {
+        return $this->getAccountName().' | '.$this->getAccountNumber();
+    }
 }
