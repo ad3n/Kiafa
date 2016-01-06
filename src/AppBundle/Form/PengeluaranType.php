@@ -25,7 +25,7 @@ class PengeluaranType extends AbstractType
                 ),
             ))
             ->add('transactionType', HiddenType::class, array(
-                'data' => Transaksi::DEBET,
+                'data' => Transaksi::CREDIT,
             ))
             ->add('rekening', EntityType::class, array(
                 'choice_label' => 'accountName',
