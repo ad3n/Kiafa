@@ -30,14 +30,15 @@ symfonyid_core:
         cache_lifetime: 5
 
 symfonyid_admin:
-    app_title: 'SIAB Skeleton'
+    app_title: 'IKROMUL AYTAM'
+    app_short_title: 'KIA'
     per_page: 10
     identifier: 'id'
     date_time_format: 'd-m-Y' #php date time format
     menu: app_main_menu
     profile_fields: ['username', 'email', 'roles']
     filter: ['name']
-    translation_domain: 'SymfonianIndonesiaAdminBundle'
+    translation_domain: 'AppBundle'
     security:
         user:
             form_class: symfonian_id.admin.user_form

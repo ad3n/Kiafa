@@ -20,18 +20,20 @@ class PengeluaranType extends AbstractType
         $builder
             ->add('transactionDate', DateType::class, array(
                 'label' => 'label.domain.tanggal_transaksi',
+                'widget' => 'single_text',
                 'attr' => array(
-                    'class' => 'form-control',
+                    'class' => 'form-control datepicker',
                 ),
             ))
             ->add('transactionType', HiddenType::class, array(
                 'data' => Transaksi::CREDIT,
             ))
             ->add('rekening', EntityType::class, array(
+                'class' => 'AppBundle\Entity\Rekening',
                 'choice_label' => 'accountName',
                 'label' => 'label.domain.rekening',
                 'attr' => array(
-                    'class' => 'btn btn-primary',
+                    'class' => 'form-control',
                 ),
             ))
             ->add('amout', NumberType::class, array(
