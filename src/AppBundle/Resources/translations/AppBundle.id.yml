@@ -50,6 +50,15 @@ page:
     change_password:
         title: 'Ubah Password'
         description: ''
+    donatur:
+        title: 'Donatur'
+        description: 'Data Donatur'
+    rekening:
+        title: 'Rekening'
+        description: 'Data Rekening'
+    donasi:
+        title: 'Donasi dan Kas Masuk'
+        description: 'Data Donasi dan Kas Masuk'
     pengeluaran:
         title: 'Pengeluaran Kas'
         description: 'Data Pengeluaran Kas'
