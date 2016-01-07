@@ -4,7 +4,9 @@ security:
 
     role_hierarchy:
         ROLE_USER: ROLE_USER
-        ROLE_SUPER_ADMIN: ROLE_USER
+        ROLE_BENDAHARA: [ROLE_BENDAHARA, ROLE_USER]
+        ROLE_REVIEWER: [ROLE_REVIEWER, ROLE_USER]
+        ROLE_SUPER_ADMIN: [ROLE_BENDAHARA, ROLE_REVIEWER]
 
     providers:
         fos_userbundle:

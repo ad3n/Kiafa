@@ -23,10 +23,12 @@ class Builder extends BaseMenu
     public function mainMenu(FactoryInterface $factory, array $options)
     {
         $menu = parent::mainMenu($factory, $options);
-        $this->addDonaturMenu($menu);
-        $this->addRekeningMenu($menu);
-        $this->addDonasiMenu($menu);
-        $this->addPengeluaranMenu($menu);
+        if ($this->authorizationChecker->isGranted('ROLE_BENDAHARA')) {
+            $this->addDonaturMenu($menu);
+            $this->addRekeningMenu($menu);
+            $this->addDonasiMenu($menu);
+            $this->addPengeluaranMenu($menu);
+        }
 
         return $menu;
     }
