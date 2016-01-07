@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Crud;
 use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Grid;
 use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Page;
@@ -11,6 +12,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
 /**
  * @Route("/pengeluaran")
+ * @Security("has_role('ROLE_BENDAHARA')")
  *
  * @Page("page.pengeluaran.title", description="page.pengeluaran.description")
  * @Crud("AppBundle\Entity\Transaksi", form="AppBundle\Form\PengeluaranType", showFields={"transaction_date", "rekening", "amout", "note"})
