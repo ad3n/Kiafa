@@ -1,0 +1,27 @@
+<?php
+
+require 'recipe/symfony.php';
+
+server('servername', 'vps.com', port)
+    ->user('user')
+    ->password('password')
+    ->stage('production_or_development')
+    ->env('deploy_path', '/path/to/deploy');
+set('shared_dirs', ['var/logs', 'var/sessions', 'web/uploads']);
+set('shared_files', ['app/config/parameters.yml']);
+set('repository', 'git@host:user/repo.git');
+set('writable_dirs', ['var/cache', 'var/logs', 'var/sessions']);
+set('use_sudo', false);
+set('bin_dir', 'bin');
+set('var_dir', 'var');
+task('deploy:chmod', function () {
+    run('chmod -R 777 {{cache_dir}}');
+    run('chmod -R 777 {{release_path}}/vendor');
+    run('chmod -R 777 {{release_path}}/web/uploads');
+    run('service php5-fpm restart');
+});
+task('deploy:dump:route', function () {
+    run('php {{release_path}}/'.trim(get('bin_dir'), '/').'/console fos:js-routing:dump --env={{env}} --no-debug');
+})->desc('Dump FOSJSRoutingBundle route');
+after('deploy:symlink', 'deploy:chmod');
+after('deploy:vendors', 'deploy:dump:route');
