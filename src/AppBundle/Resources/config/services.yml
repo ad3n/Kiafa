@@ -16,12 +16,8 @@ services:
         tags:
             - { name: knp_menu.menu, alias: app_main_menu }
 
-    app.listener.controller_filter_result_listener:
-        class: AppBundle\EventListener\FilterTransaksiResult
-        tags:
-            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
-
     app.listener.filter_result_listener:
         class: AppBundle\EventListener\FilterTransaksiResult
         tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
             - { name: kernel.event_listener, event: siab.filter_query, method: onFilterQuery }

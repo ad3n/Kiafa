@@ -31,11 +31,13 @@ class FilterTransaksiResult
         $alias = $event->getAlias();
 
         if ($this->controller instanceof DonasiController) {
-            $queryBuilder->andWhere($queryBuilder->expr()->eq($alias.'.transactionType', Transaksi::DEBET));
+            $queryBuilder->andWhere($alias.'.transactionType = :transactionType');
+            $queryBuilder->setParameter('transactionType', Transaksi::DEBET);
         }
 
         if ($this->controller instanceof PengeluaranController) {
-            $queryBuilder->andWhere($queryBuilder->expr()->eq($alias.'.transactionType', Transaksi::CREDIT));
+            $queryBuilder->andWhere($alias.'.transactionType = :transactionType');
+            $queryBuilder->setParameter('transactionType', Transaksi::CREDIT);
         }
     }
 }
