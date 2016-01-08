@@ -1521,16 +1521,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47"
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/d762ee5b099a29044603cd4649851e81aa66cb47",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
                 "shasum": ""
             },
             "require": {
@@ -1565,7 +1565,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-12-10 14:48:13"
+            "time": "2016-01-06 13:31:20"
         },
         {
             "name": "psr/log",
@@ -2411,12 +2411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "d597e503bed5b5c72d006fadd7ad24fb7820db60"
+                "reference": "53b6daa7a8b2483584310874f81b292c9f8a9de5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/d597e503bed5b5c72d006fadd7ad24fb7820db60",
-                "reference": "d597e503bed5b5c72d006fadd7ad24fb7820db60",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/53b6daa7a8b2483584310874f81b292c9f8a9de5",
+                "reference": "53b6daa7a8b2483584310874f81b292c9f8a9de5",
                 "shasum": ""
             },
             "require": {
@@ -2469,7 +2469,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-07 07:47:55"
+            "time": "2016-01-08 03:14:00"
         },
         {
             "name": "symfonyid/core-bundle",
