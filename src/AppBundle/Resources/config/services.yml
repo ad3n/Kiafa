@@ -24,4 +24,4 @@ services:
     app.listener.filter_result_listener:
         class: AppBundle\EventListener\FilterTransaksiResult
         tags:
-            - { name: kernel.event_listener, event: symfonian_id.admin.filter_query_event, method: onFilterQuery }
+            - { name: kernel.event_listener, event: siab.filter_query, method: onFilterQuery }
