@@ -3,6 +3,10 @@ app:
     type: annotation
     prefix: /admin
 
+    resource: '@AppBundle/Front/'
+    type: annotation
+    prefix: /
+
 _symfonian_indonesia:
     resource: '@SymfonianIndonesiaAdminBundle/Resources/config/routing.yml'
     prefix: /admin
