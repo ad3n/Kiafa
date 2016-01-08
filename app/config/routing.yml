@@ -3,6 +3,7 @@ app:
     type: annotation
     prefix: /admin
 
+front:
     resource: '@AppBundle/Front/'
     type: annotation
     prefix: /
