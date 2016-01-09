@@ -21,3 +21,4 @@ services:
         tags:
             - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
             - { name: kernel.event_listener, event: siab.filter_query, method: onFilterQuery }
+            - { name: kernel.event_listener, event: siab.pre_save, method: onFilterEntity }

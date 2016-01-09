@@ -47,9 +47,9 @@ class Transaksi implements TimestampableInterface, EntityInterface
     protected $transactionType;
 
     /**
-     * @ORM\Column(name="amout", type="decimal", scale=2, precision=11)
+     * @ORM\Column(name="amount", type="decimal", scale=2, precision=11)
      */
-    protected $amout;
+    protected $amount;
 
     /**
      * @ORM\Column(name="note", type="string", length=255)

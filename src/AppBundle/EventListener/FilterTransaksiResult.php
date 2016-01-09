@@ -5,6 +5,7 @@ namespace AppBundle\EventListener;
 use AppBundle\Controller\DonasiController;
 use AppBundle\Controller\PengeluaranController;
 use AppBundle\Entity\Transaksi;
+use Symfonian\Indonesia\AdminBundle\Event\FilterEntityEvent;
 use Symfonian\Indonesia\AdminBundle\Event\FilterQueryEvent;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
@@ -38,6 +39,16 @@ class FilterTransaksiResult
         if ($this->controller instanceof PengeluaranController) {
             $queryBuilder->andWhere($alias.'.transactionType = :transactionType');
             $queryBuilder->setParameter('transactionType', Transaksi::CREDIT);
+        }
+    }
+
+    public function onFilterEntity(FilterEntityEvent $event)
+    {
+        /** @var Transaksi $entity */
+        $entity = $event->getEntity();
+
+        if ($this->controller instanceof PengeluaranController) {
+            $entity->setAmout(-1 * $entity->getAmout());
         }
     }
 }
