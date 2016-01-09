@@ -61,6 +61,7 @@ doctrine:
         auto_mapping: true
         dql:
             datetime_functions:
+                WEEK: AppBundle\Doctrine\MySQL\Date\Week
                 MONTH: AppBundle\Doctrine\MySQL\Date\Month
                 YEAR: AppBundle\Doctrine\MySQL\Date\Year
 
