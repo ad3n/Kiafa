@@ -155,17 +155,17 @@ class Transaksi implements TimestampableInterface, EntityInterface
     /**
      * @return double
      */
-    public function getAmout()
+    public function getAmount()
     {
-        return $this->amout;
+        return $this->amount;
     }
 
     /**
-     * @param double $amout
+     * @param double $amount
      */
-    public function setAmout($amout)
+    public function setAmount($amount)
     {
-        $this->amout = (double) $amout;
+        $this->amount = (double) $amount;
     }
 
     /**

@@ -44,7 +44,7 @@ class DonasiType extends AbstractType
                     'class' => 'form-control',
                 ),
             ))
-            ->add('amout', NumberType::class, array(
+            ->add('amount', NumberType::class, array(
                 'label' => 'label.domain.jumlah_donasi',
                 'attr' => array(
                     'class' => 'form-control',
