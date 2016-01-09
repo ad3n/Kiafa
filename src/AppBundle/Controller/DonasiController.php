@@ -15,8 +15,8 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  * @Security("has_role('ROLE_BENDAHARA')")
  *
  * @Page("page.donasi.title", description="page.donasi.description")
- * @Crud("AppBundle\Entity\Transaksi", form="AppBundle\Form\DonasiType", showFields={"transaction_date", "donatur", "amout", "note"})
- * @Grid({"transaction_date", "donatur", "amout"}, filter={"transaction_date"})
+ * @Crud("AppBundle\Entity\Transaksi", form="AppBundle\Form\DonasiType", showFields={"transaction_date", "donatur", "amount", "note"})
+ * @Grid({"transaction_date", "donatur", "amount"}, filter={"transaction_date"})
  * @DatePicker()
  */
 class DonasiController extends CrudController

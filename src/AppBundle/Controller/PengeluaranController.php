@@ -18,10 +18,10 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  * @Crud(
  *     "AppBundle\Entity\Transaksi",
  *     form="AppBundle\Form\PengeluaranType",
- *     showFields={"transaction_date", "rekening", "amout", "note"},
+ *     showFields={"transaction_date", "rekening", "amount", "note"},
  *     list="AppBundle:Pengeluaran:list.html.twig"
  * )
- * @Grid({"transaction_date", "rekening", "amout"}, filter={"transaction_date"})
+ * @Grid({"transaction_date", "rekening", "amount"}, filter={"transaction_date"})
  * @DatePicker()
  */
 class PengeluaranController extends CrudController
