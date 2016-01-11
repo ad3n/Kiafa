@@ -22,7 +22,7 @@ class ReportQuery
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
         $queryBuilder->select('SUM(t.amount) AS transaksi');
 
-        return $queryBuilder->getQuery()->getResult();
+        return $queryBuilder->getQuery()->getSingleScalarResult();
     }
 
     public function getDetailPerBulan(\DateTime $dateTime)
