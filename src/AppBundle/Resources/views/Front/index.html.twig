@@ -78,8 +78,8 @@
                                         <tbody>
                                         {% for i, record in detail %}
                                             <tr>
-                                                <td>{{- (i + 1)-}}</td>
-                                                <td>{{- record['tanggal'] | date('d-m-Y') -}}</td>
+                                                <td class="text-center">{{- (i + 1)-}}</td>
+                                                <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}</td>
                                                 <td>{% if record['tipe'] is sameas('d')  %}{{- 'Debit' -}}{% else %}{{- 'Kredit' -}}{% endif %}</td>
                                                 <td class="text-right">{{- record['transaksi'] | number_format(2, ',', '.') -}},-</td>
                                                 <td>{% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}{{- 'Donasi untuk santunan anak yatim dan duafa' -}}{% else %}{{- record['keterangan'] -}}{% endif %}</td>
