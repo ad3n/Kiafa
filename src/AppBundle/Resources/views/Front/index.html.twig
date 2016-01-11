@@ -35,6 +35,9 @@
            <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
+                <div class="text-center" style="margin-top: 27px !important;">
+                    <span class="btn btn-success"><b>KAS SAAT INI: Rp. {{ kas | number_format(2, ',', '.') -}};</b></span>
+                </div>
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
                         <img src="{{- asset('bundles/app/img/logo.png') -}}" class="user-image img-responsive"/>
@@ -52,7 +55,6 @@
                     <div class="col-md-12">
                         <h2>KOMUNITAS IKROMUL AYTAM</h2>
                         <h5><b>Berbagi senyum dan cinta kepada sesama</b></h5>
-                        <span class="pull-right"><b>KAS SAAT INI: Rp. {{ kas | number_format(2, ',', '.') -}};</b></span>
                     </div>
                 </div>
                   <hr />
