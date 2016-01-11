@@ -67,19 +67,19 @@
                                 DONASI DAN SUPPORT KOMUNITAS IKROMUL AYTAM
                             </div>
                             <div class="panel-body">
-                                <h5>Group Facebook dan Fanpage</h5>
+                                <h2>Group Facebook dan Fanpage</h2>
                                 <ul>
                                     <li><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">FP Komunitas Ikromul Aytam</a></li>
                                     <li><a href="https://www.facebook.com/groups/1529911280589802/" target="_blank">Group Komunitas Ikromul Aytam</a></li>
                                 </ul>
-                                <h5>Rekening Donasi</h5>
+                                <h2>Rekening Donasi</h2>
                                 <p>Donasi dapat disalurkan melalui rekening-rekening berikut:</p>
                                 <ul>
                                     <li><b>BCA: 1960342344 a/n Ali Subhan</b></li>
                                     <li><b>BNI : 0157056158 a/n Ali Subhan</b></li>
                                     <li><b>BRI : 0010-01-030612-50-9 a/n Ali Subhan</b></li>
                                 </ul>
-                                <h5>Konfirmasi Transfer</h5>
+                                <h2>Konfirmasi Transfer</h2>
                                 <p>Setelah mentransfer harap menginformasikan agar dapat ditindaklanjuti</p>
                                 <ul>
                                     <li><b>WA : 0852 2597 3035</b></li>
@@ -121,7 +121,11 @@
                                                     {% endif %}
 
                                                     {% if record['tipe'] is sameas('d') %}
-                                                        Donasi dari: {{ record['donatur'] }}<br/>
+                                                        {% if record['hamba'] is sameas(true) %}
+                                                            Donasi dari: Hamba Allah<br/>
+                                                        {% else %}
+                                                            Donasi dari: {{ record['donatur'] }}<br/>
+                                                        {% endif %}
                                                     {% else %}
                                                         Rekening keluar: {{ record['rekening'] }}<br/>
                                                     {% endif %}
