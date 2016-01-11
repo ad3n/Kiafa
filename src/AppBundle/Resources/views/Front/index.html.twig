@@ -28,8 +28,8 @@
                 </button>
                 <a class="navbar-brand" href="#">KIAFA</a>
             </div>
-            <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
-                <a href="{{- path('home') -}}" class="btn btn-success square-btn-adjust">LOGIN</a>
+            <div style="color: white; padding: 15px 50px 45px 50px; font-size: 16px;">
+                <a href="{{- path('home') -}}" class="btn btn-success square-btn-adjust pull-right">LOGIN</a>
             </div>
         </nav>
            <!-- /. NAV TOP  -->
@@ -37,7 +37,7 @@
             <div class="sidebar-collapse">
                 <div class="text-center" style="margin-bottom: 27px !important;">
                     <h5 style="color:#aeaeae;">KAS SAAT INI</h5>
-                    <span class="btn btn-success disabled"><b>Rp. {{ kas | number_format(2, ',', '.') -}};</b></span>
+                    <h3><span class="label label-success"><b>Rp. {{ kas | number_format(2, ',', '.') -}}</b></span></h3>
                 </div>
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
@@ -84,7 +84,7 @@
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}</td>
                                                 <td>{% if record['tipe'] is sameas('d')  %}{{- 'Debit' -}}{% else %}{{- 'Kredit' -}}{% endif %}</td>
-                                                <td class="text-right">Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}},-</td>
+                                                <td class="text-right">Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}}</td>
                                                 <td>{% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}{{- 'Donasi untuk santunan anak yatim dan duafa' -}}{% else %}{{- record['keterangan'] -}}{% endif %}</td>
                                             </tr>
                                         {% endfor %}
