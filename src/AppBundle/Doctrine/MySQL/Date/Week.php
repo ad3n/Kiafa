@@ -11,7 +11,7 @@ class Week extends FunctionNode
 {
     private $date;
 
-    private $mode;
+    private $mode = 0;
 
     public function getSql(SqlWalker $sqlWalker)
     {
