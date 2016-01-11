@@ -54,7 +54,6 @@ class Transaksi implements TimestampableInterface, EntityInterface
 
     /**
      * @ORM\Column(name="note", type="string", length=255, nullable=true)
-     * @Blank()
      */
     protected $note;
 
