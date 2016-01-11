@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
+use Symfony\Component\Validator\Constraints\Blank;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 /**
  * @ORM\Table(name="donatur")
@@ -20,21 +22,25 @@ class Donatur implements EntityInterface
 
     /**
      * @ORM\Column(name="full_name", type="string", length=77)
+     * @NotBlank()
      */
     protected $fullName;
 
     /**
      * @ORM\Column(name="address", type="string", length=255)
+     * @NotBlank()
      */
     protected $address;
 
     /**
-     * @ORM\Column(name="email", type="string", length=77)
+     * @ORM\Column(name="email", type="string", length=77, nullable=true)
+     * @Blank()
      */
     protected $email;
 
     /**
-     * @ORM\Column(name="phone_number", type="string", length=27)
+     * @ORM\Column(name="phone_number", type="string", length=27, nullable=true)
+     * @Blank()
      */
     protected $phoneNumber;
 
