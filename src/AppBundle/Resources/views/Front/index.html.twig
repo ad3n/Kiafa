@@ -48,7 +48,7 @@
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <div class="text-center" style="margin-bottom: 27px !important;">
-                    <h5 style="color:#aeaeae;">KAS SAAT INI</h5>
+                    <h5 style="color:#aeaeae;"><b>TOTAL KAS</b></h5>
                     <h3><span class="label label-success"><b>Rp. {{ kas | number_format(2, ',', '.') -}}</b></span></h3>
                 </div>
                 <ul class="nav" id="main-menu">
@@ -56,7 +56,7 @@
                         <img src="{{- asset('bundles/app/img/logo.png') -}}" class="user-image img-responsive"/>
                     </li>
                     <li class="text-center">
-                        <span style="color:#aeaeae;">IKROMUL AYTAM</span>
+                        <span style="color:#aeaeae;"><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">IKROMUL AYTAM</a></span>
                     </li>
                 </ul>
             </div>
@@ -76,18 +76,45 @@
                     <div class=" col-sm-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                TRANSAKSI BULAN INI
+                                DONASI DAN SUPPORT KOMUNITAS IKROMUL AYTAM
+                            </div>
+                            <div class="panel-body">
+                                <h3>Group Facebook dan Fanpage</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">FP Komunitas Ikromul Aytam</a></li>
+                                    <li><a href="https://www.facebook.com/groups/1529911280589802/" target="_blank">Group Komunitas Ikromul Aytam</a></li>
+                                </ul>
+                                <h3>Rekening Donasi</h3>
+                                <ul>
+                                    <li><b>BCA: 1960342344 a/n Ali Subhan</b></li>
+                                    <li><b>BNI : 0157056158 a/n Ali Subhan</b></li>
+                                    <li><b>BRI : 0010-01-030612-50-9 a/n Ali Subhan</b></li>
+                                </ul>
+                                <h3>Konfirmasi Transfer</h3>
+                                <ul>
+                                    <li><b>WA : 0852 2597 3035</b></li>
+                                    <li><b>BB : 5235F099</b></li>
+                                    <li><b>Telegram : 085 707 545 888</b></li>
+                                    <li><b>Inbox Facebook</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                SEMBILAN TRANSAKSI TERAKHIR
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
                                     <table class="table table-striped table-bordered table-hover">
                                         <thead>
                                         <tr>
-                                            <td class="text-center text-bold">#</td>
-                                            <td class="text-center text-bold">Tanggal</td>
-                                            <td class="text-center text-bold">Transaksi</td>
-                                            <td class="text-center text-bold">Besaran</td>
-                                            <td class="text-center text-bold">Keterangan</td>
+                                            <td class="text-center"><b>#</b></td>
+                                            <td class="text-center text-bold"><b>Tanggal</b></td>
+                                            <td class="text-center text-bold"><b>Transaksi</b></td>
+                                            <td class="text-center text-bold"><b>Besaran</b></td>
+                                            <td class="text-center text-bold"><b>Keterangan</b></td>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -97,7 +124,95 @@
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}</td>
                                                 <td>{% if record['tipe'] is sameas('d')  %}{{- 'Debit' -}}{% else %}{{- 'Kredit' -}}{% endif %}</td>
                                                 <td class="text-right">Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}}</td>
-                                                <td>{% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}{{- 'Donasi untuk santunan anak yatim dan duafa' -}}{% else %}{{- record['keterangan'] -}}{% endif %}</td>
+                                                <td>
+                                                    {% set keterangan = record['keterangan'] %}
+                                                    {% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}
+                                                        {% set keterangan = 'Untuk santunan anak yatim dan duafa' %}
+                                                    {% endif %}
+
+                                                    {% if record['tipe'] is sameas('d') %}
+                                                        {% if record['hamba'] is sameas(true) %}
+                                                            Donasi dari: Hamba Allah<br/>
+                                                        {% else %}
+                                                            Donasi dari: {{ record['donatur'] }}<br/>
+                                                        {% endif %}
+                                                    {% else %}
+                                                        Rekening keluar: {{ record['rekening'] }}<br/>
+                                                    {% endif %}
+                                                    {{- keterangan -}}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                LAPORAN MINGGUAN BULAN BERJALAN
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <td class="text-center"><b>#</b></td>
+                                            <td class="text-center"><b>Minggu</b></td>
+                                            <td class="text-center"><b>Debet</b></td>
+                                            <td class="text-center"><b>Kredit</b></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for i, record in mingguan %}
+                                            <tr>
+                                                <td class="text-center">{{- (i + 1)-}}</td>
+                                                <td class="text-center">{{- record['minggu'] + 1 -}}</td>
+                                                {% if record['tipe'] is sameas('d')  %}
+                                                    <td class="text-right">Rp. {{ record['total'] | number_format(2, ',', '.') -}},-</td>
+                                                    <td>-</td>
+                                                {% else %}
+                                                    <td>-</td>
+                                                    <td class="text-right">Rp. {{ record['total'] | number_format(2, ',', '.') -}},-</td>
+                                                {% endif %}
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                LAPORAN BULANAN TAHUN BERJALAN
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <td class="text-center"><b>#</b></td>
+                                            <td class="text-center"><b>Bulan</b></td>
+                                            <td class="text-center"><b>Debet</b></td>
+                                            <td class="text-center"><b>Kredit</b></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for i, record in bulanan %}
+                                            <tr>
+                                                <td class="text-center">{{- (i + 1)-}}</td>
+                                                <td class="text-center">{{- record['bulan'] | bulan_to_text -}}</td>
+                                                {% if record['tipe'] is sameas('d')  %}
+                                                    <td class="text-right">Rp. {{ record['total'] | number_format(2, ',', '.') -}},-</td>
+                                                    <td>-</td>
+                                                {% else %}
+                                                    <td>-</td>
+                                                    <td class="text-right">Rp. {{ record['total'] | number_format(2, ',', '.') -}},-</td>
+                                                {% endif %}
                                             </tr>
                                         {% endfor %}
                                         </tbody>

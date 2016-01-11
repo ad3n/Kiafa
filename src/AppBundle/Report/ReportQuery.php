@@ -28,9 +28,12 @@ class ReportQuery
     public function getDetailPerBulan(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('t.transactionDate AS tanggal, t.transactionType AS tipe, t.amount AS transaksi, t.note AS keterangan');
+        $queryBuilder->select('t.transactionDate AS tanggal, t.transactionType AS tipe, d.fullName AS donatur, d.isHambaAllah as hamba, r.accountName AS rekening, t.amount AS transaksi, t.note AS keterangan');
+        $queryBuilder->leftJoin('t.donatur', 'd');
+        $queryBuilder->leftJoin('t.rekening', 'r');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
+        $queryBuilder->setMaxResults(9);
 
         return $queryBuilder->getQuery()->getResult();
     }
@@ -48,7 +51,7 @@ class ReportQuery
     public function getTransaksiBulanan(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('MONTH(t.transactionDate) AS bulan, t.transactionType AS tipe, SUM(t.amount) AS total, t.note AS keterangan');
+        $queryBuilder->select('MONTH(t.transactionDate) AS bulan, t.transactionType AS tipe, SUM(t.amount) AS total');
         $queryBuilder->andWhere('YEAR(t.transactionDate) = :tahun');
         $queryBuilder->setParameter('tahun', $dateTime->format('Y'));
         $queryBuilder->addGroupBy('bulan');
@@ -60,7 +63,7 @@ class ReportQuery
     public function getTransaksiMinggu(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('WEEK(t.transactionDate, 1) AS minggu, t.transactionType AS tipe, SUM(t.amount) AS total, t.note AS keterangan');
+        $queryBuilder->select('WEEK(t.transactionDate, 1) AS minggu, t.transactionType AS tipe, SUM(t.amount) AS total');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
         $queryBuilder->addGroupBy('minggu');

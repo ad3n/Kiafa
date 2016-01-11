@@ -27,3 +27,8 @@ services:
         class: AppBundle\Report\ReportQuery
         arguments:
             - '@doctrine.orm.entity_manager'
+
+    app.twig.bulan_indonesia:
+        class: AppBundle\Twig\BulanIndonesiaExtension
+        tags:
+            - { name: twig.extension }
