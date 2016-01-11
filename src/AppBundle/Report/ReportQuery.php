@@ -28,7 +28,9 @@ class ReportQuery
     public function getDetailPerBulan(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('t.transactionDate AS tanggal, t.transactionType AS tipe, t.amount AS transaksi, t.note AS keterangan');
+        $queryBuilder->select('t.transactionDate AS tanggal, t.transactionType AS tipe, d.fullName AS donatur, r.accountName AS rekening, t.amount AS transaksi, t.note AS keterangan');
+        $queryBuilder->leftJoin('t.donatur', 'd');
+        $queryBuilder->leftJoin('t.rekening', 'r');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
         $queryBuilder->setMaxResults(9);

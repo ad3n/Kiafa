@@ -85,7 +85,19 @@
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}</td>
                                                 <td>{% if record['tipe'] is sameas('d')  %}{{- 'Debit' -}}{% else %}{{- 'Kredit' -}}{% endif %}</td>
                                                 <td class="text-right">Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}}</td>
-                                                <td>{% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}{{- 'Donasi untuk santunan anak yatim dan duafa' -}}{% else %}{{- record['keterangan'] -}}{% endif %}</td>
+                                                <td>
+                                                    {% set keterangan = record['keterangan'] %}
+                                                    {% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}
+                                                        {% set keterangan = 'Donasi untuk santunan anak yatim dan duafa' %}
+                                                    {% endif %}
+
+                                                    {% if record['tipe'] is sameas('d') %}
+                                                        Donasi dari: {{ record['donatur'] }}<br/>
+                                                    {% else %}
+                                                        Rekening keluar: {{ record['rekening'] }}<br/>
+                                                    {% endif %}
+                                                    {{- keterangan -}}
+                                                </td>
                                             </tr>
                                         {% endfor %}
                                         </tbody>
