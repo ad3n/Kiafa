@@ -17,6 +17,14 @@ class ReportQuery
         $this->entityManager = $entityManager;
     }
 
+    public function getPosisiKas()
+    {
+        $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
+        $queryBuilder->select('SUM(t.amount) AS transaksi');
+
+        return $queryBuilder->getQuery()->getResult();
+    }
+
     public function getDetailPerBulan(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
