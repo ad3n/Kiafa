@@ -60,7 +60,7 @@ class ReportQuery
     public function getTransaksiMinggu(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('WEEK(t.transactionDate, 1) AS minggu, t.transactionType AS tipe, SUM(t.amount) AS total, t.note AS keterangan');
+        $queryBuilder->select('WEEK(t.transactionDate, 1) AS minggu, t.transactionType AS tipe, SUM(t.amount) AS total');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
         $queryBuilder->addGroupBy('minggu');

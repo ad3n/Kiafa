@@ -15,7 +15,7 @@ class Week extends FunctionNode
 
     public function getSql(SqlWalker $sqlWalker)
     {
-        return sprintf('WEEK(\'%s\', %d)', $sqlWalker->walkArithmeticPrimary($this->date), $sqlWalker->walkArithmeticPrimary($this->mode));
+        return sprintf('WEEK(%s, %d)', $sqlWalker->walkArithmeticPrimary($this->date), $sqlWalker->walkArithmeticPrimary($this->mode));
     }
     public function parse(Parser $parser)
     {
