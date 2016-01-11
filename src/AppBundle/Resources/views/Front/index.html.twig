@@ -37,7 +37,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        {#<img src="{{- asset('bundles/app/images/ketapang.png') -}}" class="user-image img-responsive"/>#}
+                        <img src="{{- asset('bundles/app/img/logo.png') -}}" class="user-image img-responsive"/>
                     </li>
                     <li class="text-center">
                         <span style="color:#aeaeae;">IKROMUL AYTAM</span>
@@ -60,10 +60,33 @@
                     <div class="col-md-7 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                KEADAAN KAS IKROMUL AYTAM
+                                TRANSAKSI TERAKHIR IKROMUL AYTAM
                             </div>
                             <div class="panel-body">
-                                {{ dump(detail) }}
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <td class="text-center">#</td>
+                                            <td>Tanggal</td>
+                                            <td>Transaksi</td>
+                                            <td>Besaran</td>
+                                            <td>Keterangan</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for i, record in detail %}
+                                            <tr>
+                                                <td>{{- (i + 1)-}}</td>
+                                                <td>{{- record['tanggal'] | format('d-m-Y') -}}</td>
+                                                <td class="text-right">{% if record['tipe'] is sameas('d')  %}{{- 'Debit' -}}{% else %}{{- 'Kredit' -}}{% endif %}</td>
+                                                <td class="text-right">{{- record['transaksi'] | number_format(2, ',', '.') -}},-</td>
+                                                <td class="text-right">{% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}{{- 'Donasi untuk santunan anak yatim dan duafa' -}}{% else %}{{- record['keterangan'] -}}{% endif %}</td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
