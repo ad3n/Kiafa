@@ -52,6 +52,7 @@ class DonasiType extends AbstractType
             ))
             ->add('note', TextType::class, array(
                 'label' => 'label.domain.catatan',
+                'required' => false,
                 'attr' => array(
                     'class' => 'form-control',
                 ),
