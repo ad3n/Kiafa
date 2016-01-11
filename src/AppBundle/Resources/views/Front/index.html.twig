@@ -52,7 +52,7 @@
                     <div class="col-md-12">
                         <h2>KOMUNITAS IKROMUL AYTAM</h2>
                         <h5><b>Berbagi senyum dan cinta kepada sesama</b></h5>
-                        <span class="pull-right"><b>KAS SAAT INI:{{- kas | number_format(2, ',', '.') -}};</b></span>
+                        <span class="pull-right"><b>KAS SAAT INI: Rp. {{ kas | number_format(2, ',', '.') -}};</b></span>
                     </div>
                 </div>
                   <hr />
@@ -81,7 +81,7 @@
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}</td>
                                                 <td>{% if record['tipe'] is sameas('d')  %}{{- 'Debit' -}}{% else %}{{- 'Kredit' -}}{% endif %}</td>
-                                                <td class="text-right">{{- record['transaksi'] | number_format(2, ',', '.') -}},-</td>
+                                                <td class="text-right">Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}},-</td>
                                                 <td>{% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}{{- 'Donasi untuk santunan anak yatim dan duafa' -}}{% else %}{{- record['keterangan'] -}}{% endif %}</td>
                                             </tr>
                                         {% endfor %}
