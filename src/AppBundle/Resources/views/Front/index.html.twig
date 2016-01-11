@@ -1,9 +1,22 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-      <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOMUNITAS IKROMUL AYTAM | KIAFA</title>
+    <title>KIA | KOMUNITAS IKROMUL AYTAM</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Komunitas Ikromul Aytam" />
+    <meta name="copyright" content="Komunitas Ikromul Aytam" />
+    <meta property="og:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
+    <meta property="og:title" content="KIA | KOMUNITAS IKROMUL AYTAM" />
+    <meta property="og:description" content="Saldo KIA saat ini sebesar Rp. {{ kas | number_format(2, ',', '.') -}}. KIA (Komunitas Ikromul Aytam) dengan CINTA mengajak Anda semua peduli dengan sesama. Kalau tidak sekarang, kapan lagi? Kalau tidak dimulai dari diri kita sendiri, siapa lagi? Yaqinkah bahwa hari esok kita masih bisa berbagi ?" />
+    <meta name="twitter:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
+    <meta name="twitter:title" content="KIA | KOMUNITAS IKROMUL AYTAM" />
+    <meta name="twitter:description" content="Saldo KIA saat ini sebesar Rp. {{ kas | number_format(2, ',', '.') -}}. KIA (Komunitas Ikromul Aytam) dengan CINTA mengajak Anda semua peduli dengan sesama." />
     {%- stylesheets
         'bundles/symfonianindonesiaadmin/css/bootstrap.min.css'
         'bundles/app/css/home.css'
@@ -13,8 +26,7 @@
         <link rel="stylesheet" href="{{- asset_url -}}" />
     {%- endstylesheets -%}
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
     <div id="wrapper">
