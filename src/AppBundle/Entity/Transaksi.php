@@ -6,6 +6,7 @@ use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
 use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\TimestampableInterface;
+use Symfony\Component\Validator\Constraints\Blank;
 
 /**
  * @ORM\Table(name="transaksi")
@@ -52,7 +53,8 @@ class Transaksi implements TimestampableInterface, EntityInterface
     protected $amount;
 
     /**
-     * @ORM\Column(name="note", type="string", length=255)
+     * @ORM\Column(name="note", type="string", length=255, nullable=true)
+     * @Blank()
      */
     protected $note;
 
