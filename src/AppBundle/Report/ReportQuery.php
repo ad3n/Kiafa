@@ -31,6 +31,7 @@ class ReportQuery
         $queryBuilder->select('t.transactionDate AS tanggal, t.transactionType AS tipe, t.amount AS transaksi, t.note AS keterangan');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
+        $queryBuilder->setMaxResults(9);
 
         return $queryBuilder->getQuery()->getResult();
     }
@@ -48,7 +49,7 @@ class ReportQuery
     public function getTransaksiBulanan(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('MONTH(t.transactionDate) AS bulan, t.transactionType AS tipe, SUM(t.amount) AS total, t.note AS keterangan');
+        $queryBuilder->select('MONTH(t.transactionDate) AS bulan, t.transactionType AS tipe, SUM(t.amount) AS total');
         $queryBuilder->andWhere('YEAR(t.transactionDate) = :tahun');
         $queryBuilder->setParameter('tahun', $dateTime->format('Y'));
         $queryBuilder->addGroupBy('bulan');

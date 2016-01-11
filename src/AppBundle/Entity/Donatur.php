@@ -132,6 +132,6 @@ class Donatur implements EntityInterface
 
     public function __toString()
     {
-        return $this->getFullName().' | '.$this->getPhoneNumber();
+        return $this->getFullName();
     }
 }
