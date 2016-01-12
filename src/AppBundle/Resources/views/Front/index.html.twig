@@ -181,7 +181,7 @@
                                         <tbody>
                                         {% set total = 0 %}
                                         {% for i, record in mingguan %}
-                                            {% set total = total + record['transaksi'] %}
+                                            {% set total = total + record['total'] %}
                                             <tr>
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['minggu'] + 1 -}}</td>
@@ -223,7 +223,7 @@
                                         <tbody>
                                         {% set total = 0 %}
                                         {% for i, record in bulanan %}
-                                            {% set total = total + record['transaksi'] %}
+                                            {% set total = total + record['total'] %}
                                             <tr>
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['bulan'] | bulan_to_text -}}</td>
