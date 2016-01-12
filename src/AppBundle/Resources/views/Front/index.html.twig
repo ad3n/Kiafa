@@ -131,7 +131,7 @@
                                                     <td class="text-right">Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}},-</td>
                                                 {% else %}
                                                     <td>Kredit</td>
-                                                    <td class="text-right">(Rp. {{ record['transaksi'] | number_format(2, ',', '.') -}},-)</td>
+                                                    <td class="text-right">(Rp. {{ (-1 * record['transaksi']) | number_format(2, ',', '.') -}},-)</td>
                                                 {% endif %}
                                                 <td>
                                                     {% set keterangan = record['keterangan'] %}
@@ -190,7 +190,7 @@
                                                     <td>-</td>
                                                 {% else %}
                                                     <td>-</td>
-                                                    <td class="text-right">(Rp. {{ record['total'] | number_format(2, ',', '.') -}},-)</td>
+                                                    <td class="text-right">(Rp. {{ (-1 * record['total']) | number_format(2, ',', '.') -}},-)</td>
                                                 {% endif %}
                                             </tr>
                                         {% endfor %}
@@ -232,7 +232,7 @@
                                                     <td>-</td>
                                                 {% else %}
                                                     <td>-</td>
-                                                    <td class="text-right">(Rp. {{ record['total'] | number_format(2, ',', '.') -}},-)</td>
+                                                    <td class="text-right">(Rp. {{ (-1 * record['total']) | number_format(2, ',', '.') -}},-)</td>
                                                 {% endif %}
                                             </tr>
                                         {% endfor %}
