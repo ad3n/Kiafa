@@ -4,6 +4,7 @@ namespace AppBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -26,7 +27,7 @@ class DonaturType extends AbstractType
                     'class' => 'form-control',
                 ),
             ))
-            ->add('email', TextType::class, array(
+            ->add('email', EmailType::class, array(
                 'label' => 'label.domain.email',
                 'required' => false,
                 'attr' => array(
