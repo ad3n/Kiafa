@@ -106,3 +106,8 @@ label:
         donatur: 'Pilih Donatur'
         jumlah_donasi: 'Jumlah'
         catatan: 'Catatan'
+        fullname: 'Nama Lengkap'
+        address: 'Alamat'
+        email: 'Email'
+        phonenumber: 'Phone Number'
+        hamba_allah: 'Hamba Allah?'

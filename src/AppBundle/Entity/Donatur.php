@@ -34,13 +34,11 @@ class Donatur implements EntityInterface
 
     /**
      * @ORM\Column(name="email", type="string", length=77, nullable=true)
-     * @Blank()
      */
     protected $email;
 
     /**
      * @ORM\Column(name="phone_number", type="string", length=27, nullable=true)
-     * @Blank()
      */
     protected $phoneNumber;
 

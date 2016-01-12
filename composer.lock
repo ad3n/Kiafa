@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/CoreBundle.git",
-                "reference": "305626d93ef5d53891f145c27959e6aaed3265a3"
+                "reference": "4ac8c86de5960e023f4f63b6f80476ee0f778696"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/305626d93ef5d53891f145c27959e6aaed3265a3",
-                "reference": "305626d93ef5d53891f145c27959e6aaed3265a3",
+                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/4ac8c86de5960e023f4f63b6f80476ee0f778696",
+                "reference": "4ac8c86de5960e023f4f63b6f80476ee0f778696",
                 "shasum": ""
             },
             "require": {
@@ -2525,7 +2525,7 @@
                 "ihsanudin",
                 "toolkit"
             ],
-            "time": "2016-01-04 06:06:42"
+            "time": "2016-01-12 04:51:51"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",

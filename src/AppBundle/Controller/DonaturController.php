@@ -14,7 +14,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  * @Security("has_role('ROLE_BENDAHARA')")
  *
  * @Page("page.donatur.title", description="page.donatur.description")
- * @Crud("AppBundle\Entity\Donatur", showFields={"full_name", "address", "email", "phone_number", "hamba_allah"})
+ * @Crud("AppBundle\Entity\Donatur", form="AppBundle\Form\DonaturType", showFields={"full_name", "address", "email", "phone_number", "hamba_allah"})
  * @Grid({"full_name", "phone_number", "hamba_allah"}, filter={"full_name", "phone_number"}, formatNumber=false)
  */
 class DonaturController extends CrudController
