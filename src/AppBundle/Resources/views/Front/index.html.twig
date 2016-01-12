@@ -4,20 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="{{- asset('bundles/app/img/logo.png') -}}">
-    <title>KOMUNITAS IKROMUL AYTAM | KIA</title>
+    <title>KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA</title>
     <meta name="robots" content="index,follow" />
-    <meta name="author" content="Komunitas Ikromul Aytam" />
-    <meta name="copyright" content="Komunitas Ikromul Aytam" />
+    <meta name="author" content="Komunitas Ikromul Aytam Wa Duafa" />
+    <meta name="copyright" content="Komunitas Ikromul Aytam Wa Duafa" />
     <meta property="og:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
-    <meta property="og:title" content="KOMUNITAS IKROMUL AYTAM | KIAFA" />
-    <meta property="og:description" content="Saldo KIA saat ini sebesar Rp. {{ kas | number_format(2, ',', '.') -}},-. KIA (Komunitas Ikromul Aytam) dengan CINTA mengajak Anda semua peduli dengan sesama. Kalau tidak sekarang, kapan lagi? Kalau tidak dimulai dari diri kita sendiri, siapa lagi? Yaqinkah bahwa hari esok kita masih bisa berbagi?" />
+    <meta property="og:title" content="KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA" />
+    <meta property="og:description" content="Saldo KIAFA saat ini sebesar Rp. {{ kas | number_format(2, ',', '.') -}},-. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama. Kalau tidak sekarang, kapan lagi? Kalau tidak dimulai dari diri kita sendiri, siapa lagi? Yaqinkah bahwa hari esok kita masih bisa berbagi?" />
     <meta name="twitter:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
-    <meta name="twitter:title" content="KOMUNITAS IKROMUL AYTAM | KIAFA" />
-    <meta name="twitter:description" content="Saldo KIA saat ini sebesar Rp. {{ kas | number_format(2, ',', '.') -}},-. KIA (Komunitas Ikromul Aytam) dengan CINTA mengajak Anda semua peduli dengan sesama." />
+    <meta name="twitter:title" content="KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA" />
+    <meta name="twitter:description" content="Saldo KIAFA saat ini sebesar Rp. {{ kas | number_format(2, ',', '.') -}},-. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama." />
 
     {%- stylesheets
         'bundles/symfonianindonesiaadmin/css/bootstrap.min.css'
@@ -40,7 +40,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">KIA</a>
+                <a class="navbar-brand" href="#">KIAFA</a>
             </div>
             <div style="color: white; padding: 15px 50px 45px 50px; font-size: 16px;">
                 <a href="{{- path('home') -}}" class="btn btn-success square-btn-adjust pull-right">LOGIN</a>
@@ -58,7 +58,7 @@
                         <img src="{{- asset('bundles/app/img/logo.png') -}}" class="user-image img-responsive"/>
                     </li>
                     <li class="text-center">
-                        <span style="color:#aeaeae;"><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">IKROMUL AYTAM</a></span>
+                        <span style="color:#aeaeae;"><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">KIAFA</a></span>
                     </li>
                 </ul>
             </div>
@@ -78,13 +78,13 @@
                     <div class=" col-sm-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                DONASI DAN SUPPORT KOMUNITAS IKROMUL AYTAM
+                                DONASI DAN SUPPORT KOMUNITAS IKROMUL AYTAM WA DUAFA
                             </div>
                             <div class="panel-body">
                                 <h3>Group Facebook dan Fanpage</h3>
                                 <ul>
-                                    <li><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">FP Komunitas Ikromul Aytam</a></li>
-                                    <li><a href="https://www.facebook.com/groups/1529911280589802/" target="_blank">Group Komunitas Ikromul Aytam</a></li>
+                                    <li><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">FP Komunitas Ikromul Aytam Wa Duafa</a></li>
+                                    <li><a href="https://www.facebook.com/groups/1529911280589802/" target="_blank">Group Komunitas Ikromul Aytam Wa Duafa</a></li>
                                 </ul>
                                 <h3>Rekening Donasi</h3>
                                 <ul>
@@ -154,7 +154,7 @@
                                         {% endfor %}
                                             <tr>
                                                 <td colspan="2"><b>Total</b></td>
-                                                <td colspan="3" class="text-right"><b>Rp. {{- total -}},-</b></td>
+                                                <td colspan="3" class="text-right"><b>Rp. {{- total | number_format(2, ',', '.') -}},-</b></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -196,7 +196,7 @@
                                         {% endfor %}
                                         <tr>
                                             <td colspan="2"><b>Total</b></td>
-                                            <td colspan="2" class="text-right"><b>Rp. {{- total -}},-</b></td>
+                                            <td colspan="2" class="text-right"><b>Rp. {{- total | number_format(2, ',', '.') -}},-</b></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -238,7 +238,7 @@
                                         {% endfor %}
                                         <tr>
                                             <td colspan="2"><b>Total</b></td>
-                                            <td colspan="2" class="text-right"><b>Rp. {{- total -}},-</b></td>
+                                            <td colspan="2" class="text-right"><b>Rp. {{- total | number_format(2, ',', '.') -}},-</b></td>
                                         </tr>
                                         </tbody>
                                     </table>
