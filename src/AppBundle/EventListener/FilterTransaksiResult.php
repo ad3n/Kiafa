@@ -48,7 +48,7 @@ class FilterTransaksiResult
         $entity = $event->getEntity();
 
         if ($this->controller instanceof PengeluaranController) {
-            $entity->setAmout(-1 * $entity->getAmout());
+            $entity->setAmount(-1 * $entity->getAmount());
         }
     }
 }

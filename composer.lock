@@ -1254,12 +1254,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "8111538aed32a295ee2835a64e3fe02b8283cb8e"
+                "reference": "96a6b9630e0f150f38ae167b3ef22955d8cdfab5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/8111538aed32a295ee2835a64e3fe02b8283cb8e",
-                "reference": "8111538aed32a295ee2835a64e3fe02b8283cb8e",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/96a6b9630e0f150f38ae167b3ef22955d8cdfab5",
+                "reference": "96a6b9630e0f150f38ae167b3ef22955d8cdfab5",
                 "shasum": ""
             },
             "require": {
@@ -1303,7 +1303,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2016-01-08 10:00:00"
+            "time": "2016-01-11 09:37:38"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -2412,12 +2412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "6bc723d263517b084c7a227c8fdb506838e5e11c"
+                "reference": "3dd2d29806ddfc692d5378c4e94b431c7fe0f878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/6bc723d263517b084c7a227c8fdb506838e5e11c",
-                "reference": "6bc723d263517b084c7a227c8fdb506838e5e11c",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/3dd2d29806ddfc692d5378c4e94b431c7fe0f878",
+                "reference": "3dd2d29806ddfc692d5378c4e94b431c7fe0f878",
                 "shasum": ""
             },
             "require": {
@@ -2470,7 +2470,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-11 04:51:00"
+            "time": "2016-01-12 03:01:48"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2589,16 +2589,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.23.1",
+            "version": "v1.23.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6"
+                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
-                "reference": "d9b6333ae8dd2c8e3fd256e127548def0bc614c6",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ae53fc2c312fdee63773b75cb570304f85388b08",
+                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08",
                 "shasum": ""
             },
             "require": {
@@ -2646,7 +2646,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-11-05 12:49:06"
+            "time": "2016-01-11 14:02:19"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
