@@ -42,6 +42,7 @@ class DonaturType extends AbstractType
             ))
             ->add('isHambaAllah', CheckboxType::class, array(
                 'label' => 'label.domain.hamba_allah',
+                'required' => false,
                 'attr' => array(
                     'class' => 'form-control',
                 ),
