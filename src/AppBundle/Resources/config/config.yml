@@ -30,7 +30,7 @@ symfonyid_core:
         cache_lifetime: 5
 
 symfonyid_admin:
-    app_title: 'IKROMUL AYTAM'
+    app_title: 'KIAFA'
     app_short_title: 'KIA'
     per_page: 10
     identifier: 'id'
