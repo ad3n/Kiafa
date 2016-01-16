@@ -32,6 +32,7 @@ class ReportQuery
         $queryBuilder->leftJoin('t.donatur', 'd');
         $queryBuilder->leftJoin('t.rekening', 'r');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
+        $queryBuilder->addOrderBy('t.transactionDate', 'DESC');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
         $queryBuilder->setMaxResults(9);
 
@@ -51,11 +52,10 @@ class ReportQuery
     public function getTransaksiBulanan(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('MONTH(t.transactionDate) AS bulan, t.transactionType AS tipe, SUM(t.amount) AS total');
+        $queryBuilder->select('MONTH(t.transactionDate) AS bulan, SUM(CASE WHEN t.amount > 0 THEN t.amount ELSE 0 END) AS total_d, SUM(CASE WHEN t.amount < 0 THEN t.amount ELSE 0 END) AS total_k');
         $queryBuilder->andWhere('YEAR(t.transactionDate) = :tahun');
         $queryBuilder->setParameter('tahun', $dateTime->format('Y'));
         $queryBuilder->addGroupBy('bulan');
-        $queryBuilder->addGroupBy('tipe');
 
         return $queryBuilder->getQuery()->getResult();
     }
@@ -63,11 +63,10 @@ class ReportQuery
     public function getTransaksiMinggu(\DateTime $dateTime)
     {
         $queryBuilder = $this->entityManager->getRepository('AppBundle:Transaksi')->createQueryBuilder('t');
-        $queryBuilder->select('WEEK(t.transactionDate, 1) AS minggu, t.transactionType AS tipe, SUM(t.amount) AS total');
+        $queryBuilder->select('WEEK(t.transactionDate, 1) AS minggu, SUM(CASE WHEN t.amount > 0 THEN t.amount ELSE 0 END) AS total_d, SUM(CASE WHEN t.amount < 0 THEN t.amount ELSE 0 END) AS total_k');
         $queryBuilder->andWhere('MONTH(t.transactionDate) = :bulan');
         $queryBuilder->setParameter('bulan', $dateTime->format('n'));
         $queryBuilder->addGroupBy('minggu');
-        $queryBuilder->addGroupBy('tipe');
 
         return $queryBuilder->getQuery()->getResult();
     }
