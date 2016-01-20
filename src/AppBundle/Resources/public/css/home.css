@@ -355,25 +355,29 @@ line-height: 1.428571429;
     MEDIA QUERIES     
     =============================================*/
  
- @media(min-width:768px) {
-     #page-wrapper{
-               margin: 0 0 0 260px;
+@media(min-width:768px) {
+    #page-wrapper {
+        margin: 0 0 0 260px;
         padding: 15px 30px;
         min-height: 1200px;
-		
     }
-	
-	
     .navbar-side {
         z-index: 1;
         position: absolute;
         width: 260px;
     }
-
-   .navbar {
- border-radius: 0px; 
-}
-   
+    .navbar {
+        border-radius: 0px;
+    }
 }
 
+@media screen and (max-width: 767px) {
+    .table-responsive>.table>tbody>tr>td,
+    .table-responsive>.table>tbody>tr>th {
+        white-space: normal;
+    }
+}
 
+.table-responsive>.table>thead>tr>td.amount{
+    min-width: 120px;
+}
