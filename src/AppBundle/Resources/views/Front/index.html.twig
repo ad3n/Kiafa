@@ -12,12 +12,12 @@
     <meta property="og:type" content="article" />
     <meta property="og:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
     <meta property="og:title" content="KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA" />
-    <meta property="og:description" content="Saldo KIAFA saat ini sebesar Rp{{ kas | number_format(2, ',', '.') -}}. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama. Kalau tidak sekarang, kapan lagi? Kalau tidak dimulai dari diri kita sendiri, siapa lagi? Yaqinkah bahwa hari esok kita masih bisa berbagi?" />
+    <meta property="og:description" content="Saldo KIAFA saat ini sebesar Rp{{ kas | number_format(0, ',', '.') -}}. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama. Kalau tidak sekarang, kapan lagi? Kalau tidak dimulai dari diri kita sendiri, siapa lagi? Yaqinkah bahwa hari esok kita masih bisa berbagi?" />
     <meta name="twitter:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
     <meta name="twitter:title" content="KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA" />
-    <meta name="twitter:description" content="Saldo KIAFA saat ini sebesar Rp{{ kas | number_format(2, ',', '.') -}}. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama." />
+    <meta name="twitter:description" content="Saldo KIAFA saat ini sebesar Rp{{ kas | number_format(0, ',', '.') -}}. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama." />
 
     {%- stylesheets
         'bundles/symfonianindonesiaadmin/css/bootstrap.min.css'
@@ -51,7 +51,7 @@
             <div class="sidebar-collapse">
                 <div class="text-center" style="margin-bottom: 27px !important;">
                     <h5 style="color:#aeaeae;"><b>TOTAL KAS</b></h5>
-                    <h3><span class="label label-success"><b>Rp{{ kas | number_format(2, ',', '.') -}}</b></span></h3>
+                    <h3><span class="label label-success"><b>Rp{{ kas | number_format(0, ',', '.') -}}</b></span></h3>
                 </div>
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
@@ -123,15 +123,15 @@
                                         {% set total = 0 %}
                                         {% for i, record in detail %}
                                             {% set total = total + record['transaksi'] %}
-                                            <tr>
+                                            <tr class="{% if record['tipe'] is sameas('d') %}{{- 'success' -}}{% else %}{{- 'danger' -}}{% endif %}">
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}</td>
                                                 {% if record['tipe'] is sameas('d')  %}
                                                     <td>Debit</td>
-                                                    <td class="text-right">{{ record['transaksi'] | number_format(2, ',', '.') -}}</td>
+                                                    <td class="text-right">{{ record['transaksi'] | number_format(0, ',', '.') -}}</td>
                                                 {% else %}
                                                     <td>Kredit</td>
-                                                    <td class="text-right">({{ (-1 * record['transaksi']) | number_format(2, ',', '.') -}})</td>
+                                                    <td class="text-right">({{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}})</td>
                                                 {% endif %}
                                                 <td>
                                                     {% set keterangan = record['keterangan'] %}
@@ -154,7 +154,7 @@
                                         {% endfor %}
                                             <tr>
                                                 <td colspan="2"><b>Total</b></td>
-                                                <td colspan="3" class="text-right"><b>Rp{{- total | number_format(2, ',', '.') -}}</b></td>
+                                                <td colspan="3" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}}</b></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -187,19 +187,19 @@
                                                 <td class="text-center">{{- record['minggu'] + 1 -}}</td>
                                                 <td class="text-right">
                                                     {% if record['total_d'] > 0 %}
-                                                        {{ record['total_d'] | number_format(2, ',', '.') -}}
+                                                        {{ record['total_d'] | number_format(0, ',', '.') -}}
                                                     {% else %}-{% endif %}
                                                 </td>
                                                 <td class="text-right">
                                                     {% if record['total_k'] < 0 %}
-                                                        {{ (-1 * record['total_k']) | number_format(2, ',', '.') -}}
+                                                        {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}}
                                                     {% else %}-{% endif %}
                                                 </td>
                                             </tr>
                                         {% endfor %}
                                         <tr>
                                             <td colspan="2"><b>Total</b></td>
-                                            <td colspan="2" class="text-right"><b>Rp{{- total | number_format(2, ',', '.') -}}</b></td>
+                                            <td colspan="2" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}}</b></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -232,19 +232,19 @@
                                                 <td class="text-center">{{- record['bulan'] | bulan_to_text -}}</td>
                                                 <td class="text-right">
                                                     {% if record['total_d'] > 0 %}
-                                                        {{ record['total_d'] | number_format(2, ',', '.') -}}
+                                                        {{ record['total_d'] | number_format(0, ',', '.') -}}
                                                     {% else %}-{% endif %}
                                                 </td>
                                                 <td class="text-right">
                                                     {% if record['total_k'] < 0 %}
-                                                        {{ (-1 * record['total_k']) | number_format(2, ',', '.') -}}
+                                                        {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}}
                                                     {% else %}-{% endif %}
                                                 </td>
                                             </tr>
                                         {% endfor %}
                                         <tr>
                                             <td colspan="2"><b>Total</b></td>
-                                            <td colspan="2" class="text-right"><b>Rp{{- total | number_format(2, ',', '.') -}}</b></td>
+                                            <td colspan="2" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}}</b></td>
                                         </tr>
                                         </tbody>
                                     </table>
