@@ -98,6 +98,7 @@ form:
         current_password: 'Password Lama'
         new_password: 'Password Baru'
         repeat_password: 'Ulangi Password'
+        avatar: 'Avatar'
 
 label:
     domain:
@@ -111,3 +112,5 @@ label:
         email: 'Email'
         phonenumber: 'Phone Number'
         hamba_allah: 'Hamba Allah?'
+        account_name: 'Nama Pemilik'
+        account_number: 'Nomer Rekening'

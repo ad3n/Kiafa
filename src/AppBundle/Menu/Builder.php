@@ -12,12 +12,16 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Routing\Router;
 use Symfonian\Indonesia\AdminBundle\Menu\Builder as BaseMenu;
 use Knp\Menu\MenuItem;
+use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;
+use Symfony\Component\Translation\TranslatorInterface;
 
 class Builder extends BaseMenu
 {
-    public function __construct(Router $router, ContainerInterface $container)
+
+
+    public function __construct(Router $router, TranslatorInterface $translator, AuthorizationChecker $authorizationChecker, $translationDomain)
     {
-        parent::__construct($router, $container);
+        parent::__construct($router, $translator, $authorizationChecker, $translationDomain);
     }
 
     public function mainMenu(FactoryInterface $factory, array $options)
