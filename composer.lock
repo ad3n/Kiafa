@@ -2412,12 +2412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "717ced93a5eb27f8ba8b1c36444e85fb66085690"
+                "reference": "d0625632962e8a1ac70fe84af9ac5438e1419937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/717ced93a5eb27f8ba8b1c36444e85fb66085690",
-                "reference": "717ced93a5eb27f8ba8b1c36444e85fb66085690",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/d0625632962e8a1ac70fe84af9ac5438e1419937",
+                "reference": "d0625632962e8a1ac70fe84af9ac5438e1419937",
                 "shasum": ""
             },
             "require": {
@@ -2470,7 +2470,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-21 07:00:48"
+            "time": "2016-01-22 07:13:41"
         },
         {
             "name": "symfonyid/core-bundle",
