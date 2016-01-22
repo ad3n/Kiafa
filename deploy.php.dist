@@ -7,7 +7,7 @@ server('servername', 'vps.com', port)
     ->password('password')
     ->stage('production_or_development')
     ->env('deploy_path', '/path/to/deploy');
-set('shared_dirs', ['var/logs', 'var/sessions', 'var/avatar']);
+set('shared_dirs', ['var/sessions', 'var/avatar']);
 set('shared_files', ['app/config/parameters.yml']);
 set('repository', 'git@host:user/repo.git');
 set('writable_dirs', ['var/cache', 'var/logs', 'var/sessions', 'var/avatar']);
