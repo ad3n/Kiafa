@@ -7,11 +7,23 @@ use AppBundle\Controller\PengeluaranController;
 use AppBundle\Entity\Transaksi;
 use Symfonian\Indonesia\AdminBundle\Event\FilterEntityEvent;
 use Symfonian\Indonesia\AdminBundle\Event\FilterQueryEvent;
+use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
-class FilterTransaksiResult
+class FilterTransaksiResult implements ContainerAwareInterface
 {
     private $controller;
+
+    /**
+     * @var ContainerInterface
+     */
+    private $container;
+
+    public function setContainer(ContainerInterface $container = null)
+    {
+        $this->container = $container;
+    }
 
     public function onKernelController(FilterControllerEvent $event)
     {
@@ -48,6 +60,12 @@ class FilterTransaksiResult
         $entity = $event->getEntity();
 
         if ($this->controller instanceof PengeluaranController) {
+            $posisiKas = $this->container->get('app.report.report_query')->getPosisiKas();
+
+            if ($posisiKas < $entity->getAmount()) {
+                throw new \InvalidArgumentException(sprintf('Kas tidak mencukupi'));
+            }
+
             $entity->setAmount(-1 * $entity->getAmount());
         }
     }
