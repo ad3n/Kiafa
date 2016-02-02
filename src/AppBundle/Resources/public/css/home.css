@@ -351,6 +351,14 @@ font-size: 12px;
 line-height: 1.428571429;
 }
 
+.table-responsive>.table>thead>tr>td.amount{
+    min-width: 120px;
+}
+
+.panel-heading{
+    text-transform: uppercase;
+}
+
 /*==============================================
     MEDIA QUERIES     
     =============================================*/
@@ -378,6 +386,3 @@ line-height: 1.428571429;
     }
 }
 
-.table-responsive>.table>thead>tr>td.amount{
-    min-width: 120px;
-}

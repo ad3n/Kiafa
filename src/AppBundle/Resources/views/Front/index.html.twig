@@ -105,7 +105,7 @@
                     <div class=" col-sm-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                SEMBILAN TRANSAKSI TERAKHIR
+                                SEMBILAN TRANSAKSI TERAKHIR DI BULAN {{ "now" | date("m") | bulan_to_text }} {{ "now" | date("Y") }}
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -175,7 +175,7 @@
                     <div class=" col-sm-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                LAPORAN MINGGUAN BULAN BERJALAN
+                                LAPORAN MINGGUAN BULAN BERJALAN ({{ "now" | date("m") | bulan_to_text }} {{ "now" | date("Y") }})
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -185,14 +185,17 @@
                                             <td class="text-center"><b>Minggu</b></td>
                                             <td class="text-center"><b>Debet (Rp)</b></td>
                                             <td class="text-center"><b>Kredit (Rp)</b></td>
+                                            <td class="text-center hidden-sm hidden-xs"><b>Saldo (Rp)</b></td>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        {% set total = 0 %}
+                                        {% set total_d = 0 %}
+                                        {% set total_k = 0 %}
                                         {% for i, record in mingguan %}
-                                            {% set total = total + record['total_d'] + record['total_k'] %}
+                                            {% set total_d = total_d + record['total_d'] %}
+                                            {% set total_k = total_k - record['total_k'] %}
                                             <tr>
-                                                <td class="text-center">{{- record['minggu'] + 1 -}}</td>
+                                                <td class="text-center">{{- i + 1 -}}</td>
                                                 <td class="text-right">
                                                     {% if record['total_d'] > 0 %}
                                                         {{ record['total_d'] | number_format(0, ',', '.') -}},-
@@ -203,11 +206,38 @@
                                                         {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}},-
                                                     {% else %}-{% endif %}
                                                 </td>
+                                                <td class="text-right hidden-sm hidden-xs"><b>
+                                                    {% set saldo = record['total_d'] + record['total_k'] %}
+                                                    {% if saldo > 0 %}
+                                                        {{ saldo | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}</b>
+                                                </td>
                                             </tr>
                                         {% endfor %}
                                         <tr>
-                                            <td colspan="2"><b>Total</b></td>
-                                            <td colspan="2" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}},-</b></td>
+                                            <td><b>Total</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>
+                                                {% if total_d > 0 %}
+                                                    {{- total_d | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>
+                                                {% if total_k > 0 %}
+                                                    {{- total_k | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
+                                            {% set saldo = total_d - total_k %}
+                                            <td class="text-right hidden-sm hidden-xs"><b>
+                                                {% if saldo > 0 %}
+                                                    {{ saldo | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </b></td>
+                                            {# Total untuk mobile #}
+                                            <td colspan="2" class="text-right hidden-md hidden-lg"><b>
+                                                {% if saldo > 0 %}
+                                                    {{ saldo | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -218,7 +248,7 @@
                     <div class=" col-sm-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                LAPORAN BULANAN TAHUN BERJALAN
+                                LAPORAN BULANAN TAHUN BERJALAN ({{ tanggal | date("Y") }})
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -228,12 +258,15 @@
                                             <td class="text-center"><b>Bulan</b></td>
                                             <td class="text-center"><b>Debet (Rp)</b></td>
                                             <td class="text-center"><b>Kredit (Rp)</b></td>
+                                            <td class="text-center hidden-sm hidden-xs"><b>Saldo (Rp)</b></td>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        {% set total = 0 %}
+                                        {% set total_d = 0 %}
+                                        {% set total_k = 0 %}
                                         {% for i, record in bulanan %}
-                                            {% set total = total + record['total_d'] + record['total_k'] %}
+                                            {% set total_d = total_d + record['total_d'] %}
+                                            {% set total_k = total_k - record['total_k'] %}
                                             <tr>
                                                 <td class="text-center">{{- record['bulan'] | bulan_to_text -}}</td>
                                                 <td class="text-right">
@@ -246,11 +279,21 @@
                                                         {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}},-
                                                     {% else %}-{% endif %}
                                                 </td>
+                                                <td class="text-right hidden-sm hidden-xs"><b>
+                                                    {% set saldo = record['total_d'] + record['total_k'] %}
+                                                    {% if saldo > 0 %}
+                                                        {{ saldo | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}</b>
+                                                </td>
                                             </tr>
                                         {% endfor %}
                                         <tr>
-                                            <td colspan="2"><b>Total</b></td>
-                                            <td colspan="2" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}},-</b></td>
+                                            <td><b>Total</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>{{- total_d | number_format(0, ',', '.') -}},-</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>{{- total_k | number_format(0, ',', '.') -}},-</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>{{- (total_d - total_k) | number_format(0, ',', '.') -}},-</b></td>
+                                            {# Total untuk mobile #}
+                                            <td colspan="2" class="text-right hidden-md hidden-lg"><b>{{- (total_d - total_k) | number_format(0, ',', '.') -}},-</b></td>
                                         </tr>
                                         </tbody>
                                     </table>
