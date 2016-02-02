@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "162cb7ce20260c5073ff09913fd11ffd",
-    "content-hash": "dd5ec4e487595645c2a8ca5824e1d54d",
+    "hash": "775d39391e2a645fd942e9f1f82fbff1",
+    "content-hash": "ff13f6fdec6e96982cab5761d2580436",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -492,16 +492,16 @@
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
-            "version": "1.2.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
-                "reference": "030ff41ef1db66370b36467086bfb817a661fe6a"
+                "reference": "18c600a9b82f6454d2e81ca4957cdd56a1cf3504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/030ff41ef1db66370b36467086bfb817a661fe6a",
-                "reference": "030ff41ef1db66370b36467086bfb817a661fe6a",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/18c600a9b82f6454d2e81ca4957cdd56a1cf3504",
+                "reference": "18c600a9b82f6454d2e81ca4957cdd56a1cf3504",
                 "shasum": ""
             },
             "require": {
@@ -515,6 +515,7 @@
                 "instaclick/object-calisthenics-sniffs": "dev-master",
                 "instaclick/symfony2-coding-standard": "dev-remaster",
                 "phpunit/phpunit": "~4",
+                "predis/predis": "~0.8",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~1.5",
                 "symfony/console": "~2.2|~3.0",
@@ -575,7 +576,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-11-27 04:59:07"
+            "time": "2016-01-26 17:28:51"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -954,7 +955,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/6ccff96434c0ac7fee077d1dce90966341dfd278",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/8f1fc2273b37c61ddcc1620abf4500320a23763e",
                 "reference": "6ccff96434c0ac7fee077d1dce90966341dfd278",
                 "shasum": ""
             },
@@ -1011,7 +1012,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2016-01-08 10:46:39"
+            "time": "2016-01-27 09:36:48"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1522,16 +1523,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
+                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
-                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/e6f80ab77885151908d0ec743689ca700886e8b0",
+                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0",
                 "shasum": ""
             },
             "require": {
@@ -1566,7 +1567,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-01-06 13:31:20"
+            "time": "2016-01-29 16:19:52"
         },
         {
             "name": "psr/log",
@@ -1712,6 +1713,58 @@
                 "controllers"
             ],
             "time": "2015-12-18 17:39:27"
+        },
+        {
+            "name": "sensio/generator-bundle",
+            "version": "v3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
+                "reference": "5274eafa251359087230bade2ff35dd6cec2e530"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/5274eafa251359087230bade2ff35dd6cec2e530",
+                "reference": "5274eafa251359087230bade2ff35dd6cec2e530",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/console": "~2.7|~3.0",
+                "symfony/framework-bundle": "~2.7|~3.0",
+                "symfony/process": "~2.7|~3.0",
+                "symfony/yaml": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "doctrine/orm": "~2.4",
+                "symfony/doctrine-bridge": "~2.7|~3.0",
+                "twig/twig": "~1.18"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sensio\\Bundle\\GeneratorBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "This bundle generates code for you",
+            "time": "2016-01-05 16:30:36"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -2412,12 +2465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "58f56ad0fcae0d0bbe228f29f79c92bca7a3423e"
+                "reference": "38eaa16e4f478f4acc812568a971152059af0b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/58f56ad0fcae0d0bbe228f29f79c92bca7a3423e",
-                "reference": "58f56ad0fcae0d0bbe228f29f79c92bca7a3423e",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/38eaa16e4f478f4acc812568a971152059af0b57",
+                "reference": "38eaa16e4f478f4acc812568a971152059af0b57",
                 "shasum": ""
             },
             "require": {
@@ -2436,6 +2489,9 @@
                 "symfony/symfony": "3.0.*",
                 "symfonyid/core-bundle": "dev-master",
                 "symfonyid/symfony-bundle-plugins": "dev-master"
+            },
+            "require-dev": {
+                "sensio/generator-bundle": "^3.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2470,7 +2526,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-26 04:36:26"
+            "time": "2016-02-02 00:01:56"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2533,12 +2589,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/BundlePlugins.git",
-                "reference": "b22bd720709f99fd35cf35f7005419ecfb3fde7a"
+                "reference": "4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/BundlePlugins/zipball/b22bd720709f99fd35cf35f7005419ecfb3fde7a",
-                "reference": "b22bd720709f99fd35cf35f7005419ecfb3fde7a",
+                "url": "https://api.github.com/repos/SymfonyId/BundlePlugins/zipball/4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64",
+                "reference": "4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64",
                 "shasum": ""
             },
             "require": {
@@ -2585,7 +2641,7 @@
                 "plugin",
                 "symfony"
             ],
-            "time": "2016-01-01 22:03:41"
+            "time": "2016-02-02 10:37:06"
         },
         {
             "name": "twig/twig",
@@ -2690,58 +2746,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "sensio/generator-bundle",
-            "version": "v3.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "5274eafa251359087230bade2ff35dd6cec2e530"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/5274eafa251359087230bade2ff35dd6cec2e530",
-                "reference": "5274eafa251359087230bade2ff35dd6cec2e530",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/console": "~2.7|~3.0",
-                "symfony/framework-bundle": "~2.7|~3.0",
-                "symfony/process": "~2.7|~3.0",
-                "symfony/yaml": "~2.7|~3.0"
-            },
-            "require-dev": {
-                "doctrine/orm": "~2.4",
-                "symfony/doctrine-bridge": "~2.7|~3.0",
-                "twig/twig": "~1.18"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sensio\\Bundle\\GeneratorBundle\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "This bundle generates code for you",
-            "time": "2016-01-05 16:30:36"
-        },
         {
             "name": "symfony/phpunit-bridge",
             "version": "v2.8.2",
