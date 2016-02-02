@@ -4,10 +4,11 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Crud;
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Grid;
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Page;
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Util\DatePicker;
+use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
+use Symfonian\Indonesia\AdminBundle\Annotation\Grid;
+use Symfonian\Indonesia\AdminBundle\Annotation\Page;
+use Symfonian\Indonesia\AdminBundle\Annotation\Util;
+use Symfonian\Indonesia\AdminBundle\Annotation\Util\DatePicker;
 use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
 /**
@@ -22,7 +23,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  *     list="AppBundle:Pengeluaran:list.html.twig"
  * )
  * @Grid({"transaction_date", "rekening", "amount"}, filter={"transaction_date"})
- * @DatePicker()
+ * @Util(datePicker=true)
  */
 class PengeluaranController extends CrudController
 {
