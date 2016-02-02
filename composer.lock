@@ -2589,12 +2589,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/BundlePlugins.git",
-                "reference": "b22bd720709f99fd35cf35f7005419ecfb3fde7a"
+                "reference": "4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/BundlePlugins/zipball/b22bd720709f99fd35cf35f7005419ecfb3fde7a",
-                "reference": "b22bd720709f99fd35cf35f7005419ecfb3fde7a",
+                "url": "https://api.github.com/repos/SymfonyId/BundlePlugins/zipball/4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64",
+                "reference": "4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64",
                 "shasum": ""
             },
             "require": {
@@ -2641,7 +2641,7 @@
                 "plugin",
                 "symfony"
             ],
-            "time": "2016-01-01 22:03:41"
+            "time": "2016-02-02 10:37:06"
         },
         {
             "name": "twig/twig",
