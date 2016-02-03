@@ -20,7 +20,7 @@ class HomeController extends Controller
             'mingguan' => $reportQuery->getTransaksiMinggu($date),
             'bulanan' => $reportQuery->getTransaksiBulanan($date),
             'tahunan' => $reportQuery->getTransaksiTahunan(),
-            'detail' => $reportQuery->getDetailPerBulan($date),
+            'detail' => $reportQuery->getTransaksiTerakhir(),
             'kas' => $reportQuery->getPosisiKas(),
         ));
     }
