@@ -43,10 +43,6 @@ symfonyid_admin:
         form_class: symfonian_id.admin.user_form
         entity_class: AppBundle\Entity\User
         show_fields: ['full_name', 'username', 'email', 'roles', 'avatar']
-    grid_action:
-        show: true
-        edit: true
-        delete: true
     themes:
         dashboard: 'SymfonianIndonesiaAdminBundle:Index:index.html.twig'
         form_theme: 'SymfonianIndonesiaAdminBundle:Form:fields.html.twig'
