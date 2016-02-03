@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿{% spaceless %}
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -105,7 +106,7 @@
                     <div class=" col-sm-12 col-sm-12 col-xs-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                SEMBILAN TRANSAKSI TERAKHIR DI BULAN {{ "now" | date("m") | bulan_to_text }} {{ "now" | date("Y") }}
+                                SEMBILAN TRANSAKSI TERAKHIR
                             </div>
                             <div class="panel-body">
                                 <div class="table-responsive">
@@ -231,7 +232,7 @@
                                                 {% if saldo > 0 %}
                                                     {{ saldo | number_format(0, ',', '.') -}},-
                                                 {% else %}-{% endif %}</b>
-                                            </b></td>
+                                            </td>
                                             {# Total untuk mobile #}
                                             <td colspan="2" class="text-right hidden-md hidden-lg"><b>
                                                 {% if saldo > 0 %}
@@ -325,3 +326,4 @@
     <script src="https://code.highcharts.com/modules/exporting.js" type="text/javascript"></script>
 </body>
 </html>
+{% endspaceless %}
