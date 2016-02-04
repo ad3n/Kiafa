@@ -2461,16 +2461,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.2.7",
+            "version": "5.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "2ddcc15e83a067a34679c7bd804acc57f51e78ea"
+                "reference": "fd5a79d166998dc1df9aa65dbea526748c9e8033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/2ddcc15e83a067a34679c7bd804acc57f51e78ea",
-                "reference": "2ddcc15e83a067a34679c7bd804acc57f51e78ea",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/fd5a79d166998dc1df9aa65dbea526748c9e8033",
+                "reference": "fd5a79d166998dc1df9aa65dbea526748c9e8033",
                 "shasum": ""
             },
             "require": {
@@ -2526,7 +2526,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-04 11:49:37"
+            "time": "2016-02-04 12:38:02"
         },
         {
             "name": "symfonyid/core-bundle",

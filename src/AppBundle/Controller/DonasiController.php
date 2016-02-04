@@ -21,4 +21,8 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  */
 class DonasiController extends CrudController
 {
+    protected function getClassName()
+    {
+        return __CLASS__;
+    }
 }

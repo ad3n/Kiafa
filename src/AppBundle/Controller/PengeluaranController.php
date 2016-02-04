@@ -27,4 +27,8 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  */
 class PengeluaranController extends CrudController
 {
+    protected function getClassName()
+    {
+        return __CLASS__;
+    }
 }
