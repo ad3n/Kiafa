@@ -22,7 +22,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  *     showFields={"transaction_date", "rekening", "amount", "note"},
  *     list="AppBundle:Pengeluaran:list.html.twig"
  * )
- * @Grid({"transaction_date", "rekening", "amount"}, filter={"transaction_date"})
+ * @Grid({"transaction_date", "rekening", "amount"}, filters={"transaction_date"})
  * @Util(datePicker=true)
  */
 class PengeluaranController extends CrudController

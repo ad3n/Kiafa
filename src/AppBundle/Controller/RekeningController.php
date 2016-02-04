@@ -15,7 +15,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  *
  * @Page("page.rekening.title", description="page.rekening.description")
  * @Crud("AppBundle\Entity\Rekening", form="AppBundle\Form\RekeningType", showFields={"account_name", "account_number"})
- * @Grid({"account_name", "account_number"}, filter={"account_name", "account_number"}, formatNumber=false)
+ * @Grid({"account_name", "account_number"}, filters={"account_name", "account_number"}, formatNumber=false)
  */
 class RekeningController extends CrudController
 {

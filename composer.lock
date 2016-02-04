@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "775d39391e2a645fd942e9f1f82fbff1",
-    "content-hash": "ff13f6fdec6e96982cab5761d2580436",
+    "hash": "ffe94c27bf823bb76279debd9489a8fa",
+    "content-hash": "28268c4ca2f6fff3926a8ec9ea7f1096",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2332,16 +2332,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "979d7323716fec847508eac3e62d59b117612a6e"
+                "reference": "18c3d4f356931a5b6a4afb0cc679a2c58931c795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/979d7323716fec847508eac3e62d59b117612a6e",
-                "reference": "979d7323716fec847508eac3e62d59b117612a6e",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/18c3d4f356931a5b6a4afb0cc679a2c58931c795",
+                "reference": "18c3d4f356931a5b6a4afb0cc679a2c58931c795",
                 "shasum": ""
             },
             "require": {
@@ -2413,6 +2413,7 @@
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0",
                 "phpdocumentor/reflection": "^1.0.7",
+                "symfony/polyfill-apcu": "~1.1",
                 "symfony/security-acl": "~2.8|~3.0"
             },
             "type": "library",
@@ -2426,7 +2427,6 @@
                     "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
                     "Symfony\\Bridge\\Monolog\\": "src/Symfony/Bridge/Monolog/",
                     "Symfony\\Bridge\\ProxyManager\\": "src/Symfony/Bridge/ProxyManager/",
-                    "Symfony\\Bridge\\Swiftmailer\\": "src/Symfony/Bridge/Swiftmailer/",
                     "Symfony\\Bridge\\Twig\\": "src/Symfony/Bridge/Twig/",
                     "Symfony\\Bundle\\": "src/Symfony/Bundle/",
                     "Symfony\\Component\\": "src/Symfony/Component/"
@@ -2457,20 +2457,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-12-26 16:49:48"
+            "time": "2016-02-03 12:42:23"
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "dev-master",
+            "version": "5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "23997068ecaa6edfac7a8d1e9b85c9ef6c1e3c93"
+                "reference": "72380903577aa9c5768269bae924809e65d28dff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/23997068ecaa6edfac7a8d1e9b85c9ef6c1e3c93",
-                "reference": "23997068ecaa6edfac7a8d1e9b85c9ef6c1e3c93",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/72380903577aa9c5768269bae924809e65d28dff",
+                "reference": "72380903577aa9c5768269bae924809e65d28dff",
                 "shasum": ""
             },
             "require": {
@@ -2526,7 +2526,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-03 11:19:55"
+            "time": "2016-02-04 11:17:48"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2811,8 +2811,7 @@
         "symfonyid/core-bundle": 20,
         "symfonyid/symfony-bundle-plugins": 20,
         "friendsofsymfony/user-bundle": 20,
-        "friendsofsymfony/jsrouting-bundle": 20,
-        "symfonyid/admin-bundle": 20
+        "friendsofsymfony/jsrouting-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
