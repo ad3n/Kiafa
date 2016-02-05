@@ -955,7 +955,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/8f1fc2273b37c61ddcc1620abf4500320a23763e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/140cc28026304d3023c880f441689986f99b913b",
                 "reference": "6ccff96434c0ac7fee077d1dce90966341dfd278",
                 "shasum": ""
             },
@@ -2461,16 +2461,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.2.12",
+            "version": "5.2.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "e4d2c276b546dcc7b59e25aa4c218aa28efdea8c"
+                "reference": "c478f0ec0b79fd7562f6ad325bd616c67f508b69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/e4d2c276b546dcc7b59e25aa4c218aa28efdea8c",
-                "reference": "e4d2c276b546dcc7b59e25aa4c218aa28efdea8c",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/c478f0ec0b79fd7562f6ad325bd616c67f508b69",
+                "reference": "c478f0ec0b79fd7562f6ad325bd616c67f508b69",
                 "shasum": ""
             },
             "require": {
@@ -2526,7 +2526,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-05 06:37:04"
+            "time": "2016-02-05 10:54:30"
         },
         {
             "name": "symfonyid/core-bundle",
