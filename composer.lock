@@ -2461,16 +2461,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.2.19",
+            "version": "5.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "819aa91bd0cbc0a62d4ae0052a4a3d72fcf6dbdd"
+                "reference": "5a90e380bcabc4da85d4e7d64e87979982d9bec0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/819aa91bd0cbc0a62d4ae0052a4a3d72fcf6dbdd",
-                "reference": "819aa91bd0cbc0a62d4ae0052a4a3d72fcf6dbdd",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/5a90e380bcabc4da85d4e7d64e87979982d9bec0",
+                "reference": "5a90e380bcabc4da85d4e7d64e87979982d9bec0",
                 "shasum": ""
             },
             "require": {
@@ -2484,14 +2484,12 @@
                 "php": ">=5.5.9",
                 "sensio/distribution-bundle": "^5.0",
                 "sensio/framework-extra-bundle": "^3.0.2",
+                "sensio/generator-bundle": "^3.0",
                 "symfony/monolog-bundle": "^2.8",
                 "symfony/swiftmailer-bundle": "^2.3",
                 "symfony/symfony": "3.0.*",
                 "symfonyid/core-bundle": "dev-master",
                 "symfonyid/symfony-bundle-plugins": "dev-master"
-            },
-            "require-dev": {
-                "sensio/generator-bundle": "^3.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2526,7 +2524,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-05 12:29:02"
+            "time": "2016-02-05 12:46:39"
         },
         {
             "name": "symfonyid/core-bundle",
