@@ -892,24 +892,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "d30173ee08c1b0073d000c35123fbdd227157574"
+                "reference": "8f5c55632aada470173264594160865c66f307b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/d30173ee08c1b0073d000c35123fbdd227157574",
-                "reference": "d30173ee08c1b0073d000c35123fbdd227157574",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/8f5c55632aada470173264594160865c66f307b3",
+                "reference": "8f5c55632aada470173264594160865c66f307b3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "symfony/console": "~2.3|~3.0",
-                "symfony/framework-bundle": "~2.3|~3.0",
-                "symfony/serializer": "~2.0|~3.0",
+                "symfony/console": "~2.3||~3.0",
+                "symfony/framework-bundle": "~2.3||~3.0",
+                "symfony/serializer": "~2.0||~3.0",
                 "willdurand/jsonp-callback-validator": "~1.0"
             },
             "require-dev": {
-                "symfony/expression-language": "~2.4|~3.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0"
+                "symfony/expression-language": "~2.4||~3.0",
+                "symfony/phpunit-bridge": "~2.7||~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -933,7 +933,7 @@
                 },
                 {
                     "name": "William Durand",
-                    "email": "william.durand1@gmail.com"
+                    "email": "will+git@drnd.me"
                 }
             ],
             "description": "A pretty nice way to expose your Symfony2 routing to client applications.",
@@ -943,7 +943,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2015-12-16 08:01:24"
+            "time": "2016-02-04 20:16:23"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2461,16 +2461,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.2.10",
+            "version": "5.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "fd5a79d166998dc1df9aa65dbea526748c9e8033"
+                "reference": "19de05d284049264cf8973adfc3ec4ff0a56f9db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/fd5a79d166998dc1df9aa65dbea526748c9e8033",
-                "reference": "fd5a79d166998dc1df9aa65dbea526748c9e8033",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/19de05d284049264cf8973adfc3ec4ff0a56f9db",
+                "reference": "19de05d284049264cf8973adfc3ec4ff0a56f9db",
                 "shasum": ""
             },
             "require": {
@@ -2526,7 +2526,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-04 12:38:02"
+            "time": "2016-02-05 02:24:43"
         },
         {
             "name": "symfonyid/core-bundle",
