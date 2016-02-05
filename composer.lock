@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffe94c27bf823bb76279debd9489a8fa",
-    "content-hash": "28268c4ca2f6fff3926a8ec9ea7f1096",
+    "hash": "c299de5227ffa29264d7e996022bbbd9",
+    "content-hash": "5c3c6f1d2f529d3f8626fa8922a86952",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2461,16 +2461,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.2.23",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "abfb53e31a29adaa72b5afd398e2f3ac8d28b812"
+                "reference": "0131cb593107fc1d571f78eecd459957cb1b17dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/abfb53e31a29adaa72b5afd398e2f3ac8d28b812",
-                "reference": "abfb53e31a29adaa72b5afd398e2f3ac8d28b812",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/0131cb593107fc1d571f78eecd459957cb1b17dc",
+                "reference": "0131cb593107fc1d571f78eecd459957cb1b17dc",
                 "shasum": ""
             },
             "require": {
@@ -2524,7 +2524,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-05 12:52:04"
+            "time": "2016-02-05 15:45:33"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2803,6 +2803,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "symfonyid/admin-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "knplabs/knp-paginator-bundle": 20,
         "knplabs/knp-menu-bundle": 20,
