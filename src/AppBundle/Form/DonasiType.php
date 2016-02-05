@@ -31,6 +31,7 @@ class DonasiType extends AbstractType
             ->add('rekening', EntityType::class, array(
                 'class' => 'AppBundle\Entity\Rekening',
                 'choice_label' => 'accountName',
+                'placeholder' => 'label.placeholder.rekening',
                 'label' => 'label.domain.rekening',
                 'attr' => array(
                     'class' => 'form-control',
@@ -39,6 +40,7 @@ class DonasiType extends AbstractType
             ->add('donatur', EntityType::class, array(
                 'class' => 'AppBundle\Entity\Donatur',
                 'choice_label' => 'fullName',
+                'placeholder' => 'label.placeholder.donatur',
                 'label' => 'label.domain.donatur',
                 'attr' => array(
                     'class' => 'form-control',

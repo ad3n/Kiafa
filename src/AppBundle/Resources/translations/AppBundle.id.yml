@@ -114,3 +114,6 @@ label:
         hamba_allah: 'Hamba Allah?'
         account_name: 'Nama Pemilik'
         account_number: 'Nomer Rekening'
+    placeholder:
+        rekening: 'Pilih Rekening'
+        donatur: 'Pilih Donatur'

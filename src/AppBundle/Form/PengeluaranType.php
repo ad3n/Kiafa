@@ -31,6 +31,7 @@ class PengeluaranType extends AbstractType
             ->add('rekening', EntityType::class, array(
                 'class' => 'AppBundle\Entity\Rekening',
                 'choice_label' => 'accountName',
+                'placeholder' => 'label.placeholder.rekening',
                 'label' => 'label.domain.rekening',
                 'attr' => array(
                     'class' => 'form-control',
