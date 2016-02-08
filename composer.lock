@@ -892,12 +892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "513de34cf5136c3e780a0bd67caecaf85d940339"
+                "reference": "25d0117093a845dee96d1dc439656cbf3714ea09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/513de34cf5136c3e780a0bd67caecaf85d940339",
-                "reference": "513de34cf5136c3e780a0bd67caecaf85d940339",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/25d0117093a845dee96d1dc439656cbf3714ea09",
+                "reference": "25d0117093a845dee96d1dc439656cbf3714ea09",
                 "shasum": ""
             },
             "require": {
@@ -943,7 +943,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2016-02-06 09:35:40"
+            "time": "2016-02-06 17:33:24"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2465,12 +2465,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "0de9957a97a3973e6707b860d066cae8bc9c2f8c"
+                "reference": "9689e85753ed51222022d6109c63d85e5bae7f65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/0de9957a97a3973e6707b860d066cae8bc9c2f8c",
-                "reference": "0de9957a97a3973e6707b860d066cae8bc9c2f8c",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/9689e85753ed51222022d6109c63d85e5bae7f65",
+                "reference": "9689e85753ed51222022d6109c63d85e5bae7f65",
                 "shasum": ""
             },
             "require": {
@@ -2524,7 +2524,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-06 12:59:21"
+            "time": "2016-02-07 02:09:19"
         },
         {
             "name": "symfonyid/core-bundle",
