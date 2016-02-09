@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ffe94c27bf823bb76279debd9489a8fa",
-    "content-hash": "28268c4ca2f6fff3926a8ec9ea7f1096",
+    "hash": "c299de5227ffa29264d7e996022bbbd9",
+    "content-hash": "5c3c6f1d2f529d3f8626fa8922a86952",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -892,12 +892,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
-                "reference": "8f5c55632aada470173264594160865c66f307b3"
+                "reference": "25d0117093a845dee96d1dc439656cbf3714ea09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/8f5c55632aada470173264594160865c66f307b3",
-                "reference": "8f5c55632aada470173264594160865c66f307b3",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/25d0117093a845dee96d1dc439656cbf3714ea09",
+                "reference": "25d0117093a845dee96d1dc439656cbf3714ea09",
                 "shasum": ""
             },
             "require": {
@@ -943,7 +943,7 @@
                 "javascript",
                 "routing"
             ],
-            "time": "2016-02-04 20:16:23"
+            "time": "2016-02-06 17:33:24"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1523,16 +1523,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.6",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0"
+                "reference": "b0e69d10852716b2ccbdff69c75c477637220790"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/e6f80ab77885151908d0ec743689ca700886e8b0",
-                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b0e69d10852716b2ccbdff69c75c477637220790",
+                "reference": "b0e69d10852716b2ccbdff69c75c477637220790",
                 "shasum": ""
             },
             "require": {
@@ -1567,7 +1567,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-01-29 16:19:52"
+            "time": "2016-02-06 03:52:05"
         },
         {
             "name": "psr/log",
@@ -2461,16 +2461,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.2.23",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "abfb53e31a29adaa72b5afd398e2f3ac8d28b812"
+                "reference": "9689e85753ed51222022d6109c63d85e5bae7f65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/abfb53e31a29adaa72b5afd398e2f3ac8d28b812",
-                "reference": "abfb53e31a29adaa72b5afd398e2f3ac8d28b812",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/9689e85753ed51222022d6109c63d85e5bae7f65",
+                "reference": "9689e85753ed51222022d6109c63d85e5bae7f65",
                 "shasum": ""
             },
             "require": {
@@ -2524,7 +2524,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-05 12:52:04"
+            "time": "2016-02-07 02:09:19"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2803,6 +2803,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "symfonyid/admin-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "knplabs/knp-paginator-bundle": 20,
         "knplabs/knp-menu-bundle": 20,
