@@ -124,16 +124,16 @@
                                         {% set total = 0 %} 
                                         {% for i, record in detail %}
                                             {% set total = total + record['transaksi'] %}
-                                            <tr class="{% if record['tipe'] is sameas('d') %}{{- 'success' -}}{% else %}{{- 'danger' -}}{% endif %}">
+                                            <tr class="{% if record['tipe'] is same as('d') %}{{- 'success' -}}{% else %}{{- 'danger' -}}{% endif %}">
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}
-                                                    {% if record['tipe'] is sameas('d')  %}
+                                                    {% if record['tipe'] is same as('d')  %}
                                                         <div class="hidden-lg hidden-md divider">Rp{{ record['transaksi'] | number_format(0, ',', '.') -}},-</div>
                                                     {% else %}
                                                         <div class="hidden-lg hidden-md divider">(Rp{{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</div>
                                                     {% endif %}
                                                 </td>
-                                                {% if record['tipe'] is sameas('d')  %}
+                                                {% if record['tipe'] is same as('d')  %}
                                                     <td class="hidden-sm hidden-xs">Debit</td>
                                                     <td class="text-right hidden-sm hidden-xs">{{ record['transaksi'] | number_format(0, ',', '.') -}},-</td>
                                                 {% else %}
@@ -142,12 +142,12 @@
                                                 {% endif %}
                                                 <td>
                                                     {% set keterangan = record['keterangan'] %}
-                                                    {% if record['keterangan'] is sameas(null) and record['tipe'] is sameas('d') %}
+                                                    {% if record['keterangan'] is same as(null) and record['tipe'] is same as('d') %}
                                                         {% set keterangan = 'Untuk santunan anak yatim dan duafa' %}
                                                     {% endif %}
 
-                                                    {% if record['tipe'] is sameas('d') %}
-                                                        {% if record['hamba'] is sameas(true) %}
+                                                    {% if record['tipe'] is same as('d') %}
+                                                        {% if record['hamba'] is same as(true) %}
                                                             Donasi dari: Hamba Allah<br/>
                                                         {% else %}
                                                             Donasi dari: {{ record['donatur'] }}<br/>
