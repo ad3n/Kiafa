@@ -21,7 +21,7 @@ services:
     app.listener.filter_result_listener:
         class: AppBundle\EventListener\FilterTransaksiResult
         calls:
-            - [setContainer, [@service_container]]
+            - [setContainer, ['@service_container']]
         tags:
             - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
             - { name: kernel.event_listener, event: siab.filter_query, method: onFilterQuery }
