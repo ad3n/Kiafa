@@ -1,4 +1,4 @@
-﻿{% spaceless %}
+﻿﻿{% spaceless %}
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -23,8 +23,6 @@
     {%- stylesheets
         'bundles/symfonianindonesiaadmin/css/bootstrap.min.css'
         'bundles/app/css/home.css'
-
-        filter='uglifycss, cssrewrite'
     -%}
         <link rel="stylesheet" href="{{- asset_url -}}" />
     {%- endstylesheets -%}
@@ -316,8 +314,6 @@
         '@AppBundle/Resources/public/js/jquery.metisMenu.js'
         'bundles/fosjsrouting/js/router.js'
         'js/fos_js_routes.js'
-
-        filter='uglifyjs2'
     -%}
         <script src="{{- asset_url -}}" type="text/javascript"></script>
     {%- endjavascripts -%}

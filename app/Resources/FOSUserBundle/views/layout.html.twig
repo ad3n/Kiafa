@@ -10,8 +10,6 @@
         'bundles/symfonianindonesiaadmin/css/bootstrap.min.css'
         'bundles/symfonianindonesiaadmin/css/AdminLTE.min.css'
         'bundles/symfonianindonesiaadmin/plugins/iCheck/square/blue.css'
-
-        filter='uglifycss, cssrewrite'
     -%}
     <link rel="stylesheet" href="{{- asset_url -}}" />
     {%- endstylesheets -%}
@@ -66,8 +64,6 @@
     '@SymfonianIndonesiaAdminBundle/Resources/public/js/jquery-2.1.4.min.js'
     '@SymfonianIndonesiaAdminBundle/Resources/public/js/bootstrap.min.js'
     '@SymfonianIndonesiaAdminBundle/Resources/public/plugins/iCheck/icheck.min.js'
-
-    filter='uglifyjs2'
 -%}
     <script src="{{- asset_url -}}" type="text/javascript"></script>
 {%- endjavascripts -%}
