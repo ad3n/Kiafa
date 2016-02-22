@@ -21,8 +21,7 @@ security:
                 check_path: fos_user_security_check
             logout:
                 path: fos_user_security_logout
-                target: /
-            anonymous:    true
+            anonymous: true
             remember_me:
                 secret:   "%secret%"
                 lifetime: 31536000 # 365 days in seconds
