@@ -37,7 +37,6 @@ symfonyid_admin:
     per_page: 9
     identifier: 'id'
     date_time_format: 'd-m-Y' #php date time format
-    menu: app_main_menu
     profile_fields: ['full_name', 'username', 'email', 'roles', 'avatar']
     filter: ['name']
     translation_domain: 'AppBundle'
