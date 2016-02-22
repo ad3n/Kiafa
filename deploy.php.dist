@@ -1,0 +1,31 @@
+<?php
+
+require 'recipe/symfony.php';
+
+server('prod', 'host', port)
+    ->user('user')
+    ->password('password')
+    ->stage('production')
+    ->env('deploy_path', '/home/ihsan/pejuangyatim');
+set('shared_dirs', ['var/logs', 'var/sessions', 'web/uploads']);
+set('shared_files', ['app/config/parameters.yml']);
+set('repository', 'git@bitbucket.org:ikromulaytam/kiafa.git');
+set('writable_dirs', ['var/cache', 'var/logs', 'var/sessions', 'web/uploads']);
+set('use_sudo', false);
+set('bin_dir', 'bin');
+set('var_dir', 'var');
+task('deploy:chmod', function () {
+    run('chmod -R 777 {{cache_dir}}');
+    run('chmod -R 777 {{release_path}}/vendor');
+});
+task('deploy:dump:route', function () {
+    run('php {{release_path}}/'.trim(get('bin_dir'), '/').'/console fos:js-routing:dump --env={{env}} --no-debug');
+})->desc('Dump FOSJSRoutingBundle route');
+task('deploy:cache:clear-apc', function () {
+    run('curl http://kas.pejuangyatim.org/apc.php');
+    run('rm -f {{release_path}}/web/apc.php');
+})->desc('Cleaning Apc Cache');
+after('cleanup', 'deploy:cache:clear-apc');
+after('deploy:symlink', 'deploy:chmod');
+after('deploy:vendors', 'deploy:dump:route');
+

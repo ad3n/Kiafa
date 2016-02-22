@@ -1,0 +1,325 @@
+﻿{% spaceless %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{- asset('bundles/app/img/logo.png') -}}">
+    <title>KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Komunitas Ikromul Aytam Wa Duafa" />
+    <meta name="copyright" content="Komunitas Ikromul Aytam Wa Duafa" />
+    <meta property="og:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
+    <meta property="og:title" content="KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA" />
+    <meta property="og:description" content="Saldo KIAFA saat ini sebesar Rp{{ kas | number_format(0, ',', '.') -}}. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama. Kalau tidak sekarang, kapan lagi? Kalau tidak dimulai dari diri kita sendiri, siapa lagi? Yaqinkah bahwa hari esok kita masih bisa berbagi?" />
+    <meta name="twitter:url" content="{{- absolute_url(path('app_front_home_index')) -}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="{{- absolute_url(asset('bundles/app/img/kia.jpg')) -}}" />
+    <meta name="twitter:title" content="KOMUNITAS IKROMUL AYTAM WA DUAFA | KIAFA" />
+    <meta name="twitter:description" content="Saldo KIAFA saat ini sebesar Rp{{ kas | number_format(0, ',', '.') -}}. KIAFA (Komunitas Ikromul Aytam Wa Duafa) dengan CINTA mengajak Anda semua peduli dengan sesama." />
+
+    {%- stylesheets
+        'bundles/symfonianindonesiaadmin/css/bootstrap.min.css'
+        'bundles/app/css/home.css'
+    -%}
+        <link rel="stylesheet" href="{{- asset_url -}}" />
+    {%- endstylesheets -%}
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">KIAFA</a>
+            </div>
+            <div style="color: white; padding: 15px 50px 45px 50px; font-size: 16px;">
+                <a href="{{- path('home') -}}" class="btn btn-success square-btn-adjust pull-right">LOGIN</a>
+            </div>
+        </nav>
+           <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <div class="text-center" style="margin-bottom: 27px !important;">
+                    <h5 style="color:#aeaeae;"><b>TOTAL KAS</b></h5>
+                    <h3><span class="label label-success"><b>Rp{{ kas | number_format(0, ',', '.') -}},-</b></span></h3>
+                </div>
+                <ul class="nav" id="main-menu">
+                    <li class="text-center">
+                        <img src="{{- asset('bundles/app/img/logo.png') -}}" class="user-image img-responsive"/>
+                    </li>
+                    <li class="text-center">
+                        <span style="color:#aeaeae;"><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">KIAFA</a></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>KOMUNITAS IKROMUL AYTAM WA DUAFA</h2>
+                        <h5><b>Berbagi senyum dan cinta kepada sesama</b></h5>
+                    </div>
+                </div>
+                  <hr />
+                 <!-- /. ROW  -->
+                <div class="row">
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                DONASI DAN SUPPORT KOMUNITAS IKROMUL AYTAM WA DUAFA
+                            </div>
+                            <div class="panel-body">
+                                <h3>Group Facebook dan Fanpage</h3>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/Komunitas-Ikromul-Aytam-KIA-302682336596867/" target="_blank">FP Komunitas Ikromul Aytam Wa Duafa</a></li>
+                                    <li><a href="https://www.facebook.com/groups/1529911280589802/" target="_blank">Group Komunitas Ikromul Aytam Wa Duafa</a></li>
+                                </ul>
+                                <h3>Rekening Donasi</h3>
+                                <ul>
+                                    <li><b>BCA: 1960342344 a/n Ali Subhan</b></li>
+                                    <li><b>BNI : 0157056158 a/n Ali Subhan</b></li>
+                                    <li><b>BRI : 0010-01-030612-50-9 a/n Ali Subhan</b></li>
+                                </ul>
+                                <h3>Konfirmasi Transfer</h3>
+                                <ul>
+                                    <li><b>WA : 0852 2597 3035</b></li>
+                                    <li><b>BB : 5235F099</b></li>
+                                    <li><b>Telegram : 085 707 545 888</b></li>
+                                    <li><b>Inbox Facebook</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                SEMBILAN TRANSAKSI TERAKHIR
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <td class="text-center"><b>#</b></td>
+                                            <td class="text-center text-bold amount"><b>Tanggal</b></td>
+                                            <td class="text-center text-bold hidden-sm hidden-xs"><b>Transaksi</b></td>
+                                            <td class="text-center text-bold amount hidden-sm hidden-xs"><b>Besaran (Rp)</b></td>
+                                            <td class="text-center text-bold"><b>Keterangan</b></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% set total = 0 %} 
+                                        {% for i, record in detail %}
+                                            {% set total = total + record['transaksi'] %}
+                                            <tr class="{% if record['tipe'] is same as('d') %}{{- 'success' -}}{% else %}{{- 'danger' -}}{% endif %}">
+                                                <td class="text-center">{{- (i + 1)-}}</td>
+                                                <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}
+                                                    {% if record['tipe'] is same as('d')  %}
+                                                        <div class="hidden-lg hidden-md divider">Rp{{ record['transaksi'] | number_format(0, ',', '.') -}},-</div>
+                                                    {% else %}
+                                                        <div class="hidden-lg hidden-md divider">(Rp{{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</div>
+                                                    {% endif %}
+                                                </td>
+                                                {% if record['tipe'] is same as('d')  %}
+                                                    <td class="hidden-sm hidden-xs">Debit</td>
+                                                    <td class="text-right hidden-sm hidden-xs">{{ record['transaksi'] | number_format(0, ',', '.') -}},-</td>
+                                                {% else %}
+                                                    <td class="hidden-sm hidden-xs">Kredit</td>
+                                                    <td class="text-right hidden-sm hidden-xs">({{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</td>
+                                                {% endif %}
+                                                <td>
+                                                    {% set keterangan = record['keterangan'] %}
+                                                    {% if record['keterangan'] is same as(null) and record['tipe'] is same as('d') %}
+                                                        {% set keterangan = 'Untuk santunan anak yatim dan duafa' %}
+                                                    {% endif %}
+
+                                                    {% if record['tipe'] is same as('d') %}
+                                                        {% if record['hamba'] is same as(true) %}
+                                                            Donasi dari: Hamba Allah<br/>
+                                                        {% else %}
+                                                            Donasi dari: {{ record['donatur'] }}<br/>
+                                                        {% endif %}
+                                                    {% else %}
+                                                        Rekening keluar: {{ record['rekening'] }}<br/>
+                                                    {% endif %}
+                                                    {{- keterangan -}}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                            <tr class="hidden-sm hidden-xs">
+                                                <td colspan="2"><b>Total</b></td>
+                                                <td colspan="3" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}},-</b></td>
+                                            </tr>
+                                            <tr class="hidden-md hidden-lg">
+                                                <td colspan="2"><b>Total</b></td>
+                                                <td class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}},-</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                LAPORAN MINGGUAN BULAN BERJALAN ({{ "now" | date("m") | bulan_to_text }} {{ "now" | date("Y") }})
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <td class="text-center"><b>Minggu</b></td>
+                                            <td class="text-center"><b>Debet (Rp)</b></td>
+                                            <td class="text-center"><b>Kredit (Rp)</b></td>
+                                            <td class="text-center hidden-sm hidden-xs"><b>Saldo (Rp)</b></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% set total_d = 0 %}
+                                        {% set total_k = 0 %}
+                                        {% for i, record in mingguan %}
+                                            {% set total_d = total_d + record['total_d'] %}
+                                            {% set total_k = total_k - record['total_k'] %}
+                                            <tr>
+                                                <td class="text-center">{{- i + 1 -}}</td>
+                                                <td class="text-right">
+                                                    {% if record['total_d'] > 0 %}
+                                                        {{ record['total_d'] | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}
+                                                </td>
+                                                <td class="text-right">
+                                                    {% if record['total_k'] < 0 %}
+                                                        {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}
+                                                </td>
+                                                <td class="text-right hidden-sm hidden-xs"><b>
+                                                    {% set saldo = record['total_d'] + record['total_k'] %}
+                                                    {% if saldo > 0 %}
+                                                        {{ saldo | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}</b>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        <tr>
+                                            <td><b>Total</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>
+                                                {% if total_d > 0 %}
+                                                    {{- total_d | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>
+                                                {% if total_k > 0 %}
+                                                    {{- total_k | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
+                                            {% set saldo = total_d - total_k %}
+                                            <td class="text-right hidden-sm hidden-xs"><b>
+                                                {% if saldo > 0 %}
+                                                    {{ saldo | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
+                                            {# Total untuk mobile #}
+                                            <td colspan="2" class="text-right hidden-md hidden-lg"><b>
+                                                {% if saldo > 0 %}
+                                                    {{ saldo | number_format(0, ',', '.') -}},-
+                                                {% else %}-{% endif %}</b>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                LAPORAN BULANAN TAHUN BERJALAN ({{ "now" | date("Y") }})
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <td class="text-center"><b>Bulan</b></td>
+                                            <td class="text-center"><b>Debet (Rp)</b></td>
+                                            <td class="text-center"><b>Kredit (Rp)</b></td>
+                                            <td class="text-center hidden-sm hidden-xs"><b>Saldo (Rp)</b></td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% set total_d = 0 %}
+                                        {% set total_k = 0 %}
+                                        {% for i, record in bulanan %}
+                                            {% set total_d = total_d + record['total_d'] %}
+                                            {% set total_k = total_k - record['total_k'] %}
+                                            <tr>
+                                                <td class="text-center">{{- record['bulan'] | bulan_to_text -}}</td>
+                                                <td class="text-right">
+                                                    {% if record['total_d'] > 0 %}
+                                                        {{ record['total_d'] | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}
+                                                </td>
+                                                <td class="text-right">
+                                                    {% if record['total_k'] < 0 %}
+                                                        {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}
+                                                </td>
+                                                <td class="text-right hidden-sm hidden-xs"><b>
+                                                    {% set saldo = record['total_d'] + record['total_k'] %}
+                                                    {% if saldo > 0 %}
+                                                        {{ saldo | number_format(0, ',', '.') -}},-
+                                                    {% else %}-{% endif %}</b>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        <tr>
+                                            <td><b>Total</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>{{- total_d | number_format(0, ',', '.') -}},-</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>{{- total_k | number_format(0, ',', '.') -}},-</b></td>
+                                            <td class="text-right hidden-sm hidden-xs"><b>{{- (total_d - total_k) | number_format(0, ',', '.') -}},-</b></td>
+                                            {# Total untuk mobile #}
+                                            <td colspan="2" class="text-right hidden-md hidden-lg"><b>{{- (total_d - total_k) | number_format(0, ',', '.') -}},-</b></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- /. PAGE INNER  -->
+        </div>
+     <!-- /. PAGE WRAPPER  -->
+    </div>
+     <!-- /. WRAPPER  -->
+    {%- javascripts
+        '@SymfonianIndonesiaAdminBundle/Resources/public/js/jquery-2.1.4.min.js'
+        '@SymfonianIndonesiaAdminBundle/Resources/public/js/bootstrap.min.js'
+        '@AppBundle/Resources/public/js/home.js'
+        '@AppBundle/Resources/public/js/jquery.metisMenu.js'
+        'bundles/fosjsrouting/js/router.js'
+        'js/fos_js_routes.js'
+    -%}
+        <script src="{{- asset_url -}}" type="text/javascript"></script>
+    {%- endjavascripts -%}
+    <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js" type="text/javascript"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js" type="text/javascript"></script>
+</body>
+</html>
+{% endspaceless %}
