@@ -1427,12 +1427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "e0cecf1e2c58470dc2ff0ad7583a29c2bebf9d85"
+                "reference": "20e7a0f492c6d94a63bffc14105c5b748c00e3ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/e0cecf1e2c58470dc2ff0ad7583a29c2bebf9d85",
-                "reference": "e0cecf1e2c58470dc2ff0ad7583a29c2bebf9d85",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/20e7a0f492c6d94a63bffc14105c5b748c00e3ae",
+                "reference": "20e7a0f492c6d94a63bffc14105c5b748c00e3ae",
                 "shasum": ""
             },
             "require": {
@@ -1476,7 +1476,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2016-02-21 15:14:34"
+            "time": "2016-02-22 09:36:52"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -2686,12 +2686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "e561b593057c5086f1ef9e6de52237735709d5fb"
+                "reference": "1ae5da10b447928a4056f7d41e0207e4fdf7f373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/e561b593057c5086f1ef9e6de52237735709d5fb",
-                "reference": "e561b593057c5086f1ef9e6de52237735709d5fb",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/1ae5da10b447928a4056f7d41e0207e4fdf7f373",
+                "reference": "1ae5da10b447928a4056f7d41e0207e4fdf7f373",
                 "shasum": ""
             },
             "require": {
@@ -2750,7 +2750,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-22 08:55:03"
+            "time": "2016-02-22 10:03:10"
         },
         {
             "name": "symfonyid/core-bundle",
