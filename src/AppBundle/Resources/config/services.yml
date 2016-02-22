@@ -3,6 +3,7 @@ services:
         class: AppBundle\Menu\Builder
         arguments:
             - '@router'
+            - '@symfonian_id.admin.extractor.class_extractor'
             - '@translator'
             - '@security.authorization_checker'
             - '%symfonian_id.admin.translation_domain%'
