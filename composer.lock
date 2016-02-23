@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6c2c4ef042e9f4be73db546ba2706408",
-    "content-hash": "1bc92ece827dbb698f945f09a9d6502a",
+    "hash": "b0e2b9eca50d9713afc08e9b0c621e23",
+    "content-hash": "0224a75113beec4e417fa8c385b5632e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -952,12 +952,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "6ccff96434c0ac7fee077d1dce90966341dfd278"
+                "reference": "e770bfa2fd0fc665f55cd7cfeb34bddeffb892f4"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e770bfa2fd0fc665f55cd7cfeb34bddeffb892f4",
-                "reference": "6ccff96434c0ac7fee077d1dce90966341dfd278",
+                "reference": "e770bfa2fd0fc665f55cd7cfeb34bddeffb892f4",
                 "shasum": ""
             },
             "require": {
@@ -2560,16 +2560,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "979d7323716fec847508eac3e62d59b117612a6e"
+                "reference": "18c3d4f356931a5b6a4afb0cc679a2c58931c795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/979d7323716fec847508eac3e62d59b117612a6e",
-                "reference": "979d7323716fec847508eac3e62d59b117612a6e",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/18c3d4f356931a5b6a4afb0cc679a2c58931c795",
+                "reference": "18c3d4f356931a5b6a4afb0cc679a2c58931c795",
                 "shasum": ""
             },
             "require": {
@@ -2641,6 +2641,7 @@
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0",
                 "phpdocumentor/reflection": "^1.0.7",
+                "symfony/polyfill-apcu": "~1.1",
                 "symfony/security-acl": "~2.8|~3.0"
             },
             "type": "library",
@@ -2654,7 +2655,6 @@
                     "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
                     "Symfony\\Bridge\\Monolog\\": "src/Symfony/Bridge/Monolog/",
                     "Symfony\\Bridge\\ProxyManager\\": "src/Symfony/Bridge/ProxyManager/",
-                    "Symfony\\Bridge\\Swiftmailer\\": "src/Symfony/Bridge/Swiftmailer/",
                     "Symfony\\Bridge\\Twig\\": "src/Symfony/Bridge/Twig/",
                     "Symfony\\Bundle\\": "src/Symfony/Bundle/",
                     "Symfony\\Component\\": "src/Symfony/Component/"
@@ -2685,7 +2685,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-12-26 16:49:48"
+            "time": "2016-02-03 12:42:23"
         },
         {
             "name": "symfonyid/admin-bundle",
