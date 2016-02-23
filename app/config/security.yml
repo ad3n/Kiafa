@@ -40,4 +40,4 @@ security:
         - { path: ^/plugins*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/_wdt*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/admin/*, role: [ROLE_USER, IS_AUTHENTICATED_FULLY] }
+        - { path: ^/admin*, role: [ROLE_USER, IS_AUTHENTICATED_FULLY] }
