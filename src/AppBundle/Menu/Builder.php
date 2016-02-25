@@ -9,17 +9,16 @@ namespace AppBundle\Menu;
 use Knp\Menu\FactoryInterface;
 use Symfonian\Indonesia\AdminBundle\Extractor\ClassExtractor;
 use Symfonian\Indonesia\AdminBundle\Menu\Builder as BaseMenu;
+use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Routing\Router;
 use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;
 use Symfony\Component\Translation\TranslatorInterface;
 
 class Builder extends BaseMenu
 {
-
-
-    public function __construct(Router $router, ClassExtractor $extractor, TranslatorInterface $translator, AuthorizationChecker $authorizationChecker, $translationDomain)
+    public function __construct(Kernel $kernel, Router $router, ClassExtractor $extractor, TranslatorInterface $translator, AuthorizationChecker $authorizationChecker, $translationDomain)
     {
-        parent::__construct($router, $extractor, $translator, $authorizationChecker, $translationDomain);
+        parent::__construct($kernel, $router, $extractor, $translator, $authorizationChecker, $translationDomain);
     }
 
     public function mainMenu(FactoryInterface $factory, array $options)

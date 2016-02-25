@@ -2,6 +2,7 @@ services:
     app.menu:
         class: AppBundle\Menu\Builder
         arguments:
+            - '@kernel'
             - '@router'
             - '@symfonian_id.admin.extractor.class_extractor'
             - '@translator'
