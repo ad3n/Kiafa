@@ -10,6 +10,7 @@ use Symfonian\Indonesia\AdminBundle\Event\FilterQueryEvent;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
+use Symfony\Component\VarDumper\VarDumper;
 
 class FilterTransaksiResult implements ContainerAwareInterface
 {
@@ -67,6 +68,7 @@ class FilterTransaksiResult implements ContainerAwareInterface
             }
 
             $entity->setAmount(-1 * $entity->getAmount());
+            $event->setEntity($entity);
         }
     }
 }

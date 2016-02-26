@@ -158,10 +158,6 @@ class Transaksi implements TimestampableInterface, EntityInterface
      */
     public function getAmount()
     {
-        if (self:: CREDIT === $this->getTransactionType()) {
-            return -1 * $this->amount;
-        }
-
         return $this->amount;
     }
 
