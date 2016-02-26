@@ -126,17 +126,17 @@
                                                 <td class="text-center">{{- (i + 1)-}}</td>
                                                 <td class="text-center">{{- record['tanggal'] | date('d-m-Y') -}}
                                                     {% if record['tipe'] is same as('d')  %}
-                                                        <div class="hidden-lg hidden-md divider">Rp{{ record['transaksi'] | number_format(0, ',', '.') -}},-</div>
+                                                        <div class="hidden-lg hidden-md divider">Rp. {{ record['transaksi'] | number_format(0, ',', '.') -}},-</div>
                                                     {% else %}
-                                                        <div class="hidden-lg hidden-md divider">(Rp{{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</div>
+                                                        <div class="hidden-lg hidden-md divider">(Rp. {{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</div>
                                                     {% endif %}
                                                 </td>
                                                 {% if record['tipe'] is same as('d')  %}
                                                     <td class="hidden-sm hidden-xs">Debit</td>
-                                                    <td class="text-right hidden-sm hidden-xs">{{ record['transaksi'] | number_format(0, ',', '.') -}},-</td>
+                                                    <td class="text-right hidden-sm hidden-xs">Rp. {{ record['transaksi'] | number_format(0, ',', '.') -}},-</td>
                                                 {% else %}
                                                     <td class="hidden-sm hidden-xs">Kredit</td>
-                                                    <td class="text-right hidden-sm hidden-xs">({{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</td>
+                                                    <td class="text-right hidden-sm hidden-xs">(Rp. {{ (-1 * record['transaksi']) | number_format(0, ',', '.') -}},-)</td>
                                                 {% endif %}
                                                 <td>
                                                     {% set keterangan = record['keterangan'] %}
@@ -159,11 +159,23 @@
                                         {% endfor %}
                                             <tr class="hidden-sm hidden-xs">
                                                 <td colspan="2"><b>Total</b></td>
-                                                <td colspan="3" class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}},-</b></td>
+                                                <td colspan="3" class="text-right"><b>
+                                                    {% if total > 0 %}
+                                                        Rp. {{ total | number_format(0, ',', '.') -}},-
+                                                    {% else %}
+                                                        (Rp. {{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                    {% endif %}
+                                                </b></td>
                                             </tr>
                                             <tr class="hidden-md hidden-lg">
                                                 <td colspan="2"><b>Total</b></td>
-                                                <td class="text-right"><b>Rp{{- total | number_format(0, ',', '.') -}},-</b></td>
+                                                <td class="text-right"><b>
+                                                    {% if total > 0 %}
+                                                        Rp. {{ total | number_format(0, ',', '.') -}},-
+                                                    {% else %}
+                                                        (Rp. {{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                    {% endif %}
+                                                </b></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -197,19 +209,21 @@
                                                 <td class="text-center">{{- i + 1 -}}</td>
                                                 <td class="text-right">
                                                     {% if record['total_d'] > 0 %}
-                                                        {{ record['total_d'] | number_format(0, ',', '.') -}},-
+                                                        Rp. {{ record['total_d'] | number_format(0, ',', '.') -}},-
                                                     {% else %}-{% endif %}
                                                 </td>
                                                 <td class="text-right">
                                                     {% if record['total_k'] < 0 %}
-                                                        {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}},-
+                                                        Rp. {{ (-1 * record['total_k']) | number_format(0, ',', '.') -}},-
                                                     {% else %}-{% endif %}
                                                 </td>
                                                 <td class="text-right hidden-sm hidden-xs"><b>
                                                     {% set saldo = record['total_d'] + record['total_k'] %}
                                                     {% if saldo > 0 %}
-                                                        {{ saldo | number_format(0, ',', '.') -}},-
-                                                    {% else %}-{% endif %}</b>
+                                                        Rp. {{ saldo | number_format(0, ',', '.') -}},-
+                                                    {% else %}
+                                                        (Rp. {{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                    {% endif %}</b>
                                                 </td>
                                             </tr>
                                         {% endfor %}
@@ -217,25 +231,29 @@
                                             <td><b>Total</b></td>
                                             <td class="text-right hidden-sm hidden-xs"><b>
                                                 {% if total_d > 0 %}
-                                                    {{- total_d | number_format(0, ',', '.') -}},-
+                                                    Rp. {{- total_d | number_format(0, ',', '.') -}},-
                                                 {% else %}-{% endif %}</b>
                                             </td>
                                             <td class="text-right hidden-sm hidden-xs"><b>
                                                 {% if total_k > 0 %}
-                                                    {{- total_k | number_format(0, ',', '.') -}},-
+                                                    Rp. {{- total_k | number_format(0, ',', '.') -}},-
                                                 {% else %}-{% endif %}</b>
                                             </td>
                                             {% set saldo = total_d - total_k %}
                                             <td class="text-right hidden-sm hidden-xs"><b>
                                                 {% if saldo > 0 %}
-                                                    {{ saldo | number_format(0, ',', '.') -}},-
-                                                {% else %}-{% endif %}</b>
+                                                    Rp. {{ saldo | number_format(0, ',', '.') -}},-
+                                                {% else %}
+                                                    (Rp. {{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                {% endif %}</b>
                                             </td>
                                             {# Total untuk mobile #}
                                             <td colspan="2" class="text-right hidden-md hidden-lg"><b>
                                                 {% if saldo > 0 %}
-                                                    {{ saldo | number_format(0, ',', '.') -}},-
-                                                {% else %}-{% endif %}</b>
+                                                    Rp. {{ saldo | number_format(0, ',', '.') -}},-
+                                                {% else %}
+                                                    (Rp. {{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                {% endif %}</b>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -271,7 +289,9 @@
                                                 <td class="text-right">
                                                     {% if record['total_d'] > 0 %}
                                                         {{ record['total_d'] | number_format(0, ',', '.') -}},-
-                                                    {% else %}-{% endif %}
+                                                    {% else %}
+                                                        ({{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                    {% endif %}
                                                 </td>
                                                 <td class="text-right">
                                                     {% if record['total_k'] < 0 %}
@@ -282,8 +302,10 @@
                                                     {% set saldo = record['total_d'] + record['total_k'] %}
                                                     {% if saldo > 0 %}
                                                         {{ saldo | number_format(0, ',', '.') -}},-
-                                                    {% else %}-{% endif %}</b>
-                                                </td>
+                                                    {% else %}
+                                                        ({{ (-1 * saldo) | number_format(0, ',', '.') -}},-)
+                                                    {% endif %}
+                                                </b></td>
                                             </tr>
                                         {% endfor %}
                                         <tr>
