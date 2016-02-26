@@ -67,8 +67,10 @@ class FilterTransaksiResult implements ContainerAwareInterface
                 throw new \InvalidArgumentException(sprintf('Kas tidak mencukupi'));
             }
 
-            $entity->setAmount(-1 * $entity->getAmount());
-            $event->setEntity($entity);
+            if (!$entity->getId()) {
+                $entity->setAmount(-1 * $entity->getAmount());
+                $event->setEntity($entity);
+            }
         }
     }
 }
