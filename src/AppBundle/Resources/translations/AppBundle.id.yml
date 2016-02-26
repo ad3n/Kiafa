@@ -69,24 +69,11 @@ menu:
     user:
         title: 'User'
         change_password: 'Ubah Password'
-        add: 'Tambah User'
-        list: 'Daftar User'
-    donatur:
-        title: 'Donatur'
-        add: 'Tambah Donatur'
-        list: 'Daftar Donatur'
-    rekening:
-        title: 'Rekening'
-        add: 'Tambah Rekening'
-        list: 'Daftar Rekening'
-    donasi:
-        title: 'Donasi'
-        add: 'Tambah Donasi'
-        list: 'Daftar Donasi'
-    pengeluaran:
-        title: 'Pengeluaran'
-        add: 'Tambah Pengeluaran'
-        list: 'Daftar Pengeluaran'
+    label:
+        donatur: 'Donatur'
+        rekening: 'Rekening'
+        donasi: 'Donasi'
+        pengeluaran: 'Pengeluaran'
 
 form:
     label:
