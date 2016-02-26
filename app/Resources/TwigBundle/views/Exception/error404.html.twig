@@ -9,22 +9,47 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <style type="text/css">
             body{
-                margin-top: 100px;
                 background: url('{{ asset('bundles/app/img/indonesia.jpg') }}') no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-                color : #757B86;
+                color: #3C3C3C;
+            }
+
+            #outer {
+                display: table;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            #middle {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            #inner {
+                margin-left: auto;
+                margin-right: auto; 
+                width: 550px;
+                padding: 10px;
+                background: rgba(255, 255, 255, 0.54);
+                margin: auto;
+                border-radius: 5px;
             }
 
             h3{
                 margin: 7px;
-                text-shadow: 3px 1px #333333;
+                font-weight: bold;
             }
 
             .margin-top-17 {
                 margin-top: 17px;
+            }
+
+            img{
+                max-height: 220px;
             }
 
             #btn-area{
@@ -37,21 +62,31 @@
 
             #socmed a{
                 text-decoration: none;
-                margin: 17px;
+                margin: 10px;
+            }
+
+            #socmed a i{
+                margin-right: 5px;
             }
 
         </style>
     </head>
-    <body class="text-center">
-        <h3 class="text-uppercase">Halaman Tidak Ditemukan</h3>
-        <h3>Kami Tidak Mempunyai Yang Anda Cari, Silahkan Coba Lain Kali.</h3>
-        <div id="btn-area">
-            <a class="btn btn-success" href="/">Kembali Ke Halaman Depan</a>
-        </div>
-        <img src="{{ asset('bundles/app/img/logo.jpg') }}" class="img-rounded margin-top-17" />
-        <div id="socmed">
-            <a  href="https://www.facebook.com/groups/symfonian.indo" target="_blank" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook Group</a>
-            <a  href="https://github.com/SymfonyId" target="_blank" class="btn btn-default"><i class="fa fa-github"></i> Github</a>
+    <body>
+        <div id="outer">
+            <div id="middle">
+                <div id="inner" class="text-center">
+                    <h3 class="text-uppercase">Halaman Tidak Ditemukan</h3>
+                    <h3>Kami Tidak Mempunyai Yang Anda Cari, Silahkan Coba Lain Kali.</h3>
+                    <div id="btn-area">
+                        <a class="btn btn-success" href="/">Kembali Ke Halaman Depan</a>
+                    </div>
+                    <img src="{{ asset('bundles/app/img/logo.jpg') }}" class="img-rounded margin-top-17" />
+                    <div id="socmed">
+                        <a  href="https://www.facebook.com/groups/symfonian.indo" target="_blank" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook Group</a>
+                        <a  href="https://github.com/SymfonyId" target="_blank" class="btn btn-default"><i class="fa fa-github"></i> Github</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
