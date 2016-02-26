@@ -120,6 +120,8 @@ entity:
         account_number: 'No. Rekening'
         transaction_date: 'Tanggal Transaksi'
         transaction_type: 'Tipe Transaksi'
+        donasi: 'Donasi'
+        pengeluaran: 'Pengeluaran'
         amount: 'Besarnya'
         note: 'Catatan'
         action: 'Pilihan'
