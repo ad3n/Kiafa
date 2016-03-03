@@ -8,7 +8,6 @@ use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
 use Symfonian\Indonesia\AdminBundle\Annotation\Grid;
 use Symfonian\Indonesia\AdminBundle\Annotation\Page;
 use Symfonian\Indonesia\AdminBundle\Annotation\Util;
-use Symfonian\Indonesia\AdminBundle\Annotation\Util\DatePicker;
 use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
 /**

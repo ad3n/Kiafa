@@ -4,8 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
-use Symfony\Component\Validator\Constraints\Blank;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfonian\Indonesia\AdminBundle\Grid\Sortable;
 
 /**
  * @ORM\Table(name="donatur")
@@ -23,6 +23,7 @@ class Donatur implements EntityInterface
     /**
      * @ORM\Column(name="full_name", type="string", length=77)
      * @NotBlank()
+     * @Sortable()
      */
     protected $fullName;
 

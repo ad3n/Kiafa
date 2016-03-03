@@ -121,6 +121,8 @@ entity:
         transaction_date: 'Tanggal Transaksi'
         transaction_type: 'Tipe Transaksi'
         donasi: 'Donasi'
+        donatur: 'Donatur'
+        rekening: 'Rekening'
         pengeluaran: 'Pengeluaran'
         amount: 'Besarnya'
         note: 'Catatan'
