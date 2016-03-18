@@ -1447,16 +1447,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.18.0",
+            "version": "1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "e19b764b5c855580e8ffa7e615f72c10fd2f99cc"
+                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/e19b764b5c855580e8ffa7e615f72c10fd2f99cc",
-                "reference": "e19b764b5c855580e8ffa7e615f72c10fd2f99cc",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
+                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
                 "shasum": ""
             },
             "require": {
@@ -1521,20 +1521,20 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2016-03-01 18:00:40"
+            "time": "2016-03-13 16:08:35"
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.2.2",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430"
+                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b3313b618f4edd76523572531d5d7e22fe747430",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/ff76e1a660669bb56ba74ba0583fd8d41417bf39",
+                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39",
                 "shasum": ""
             },
             "require": {
@@ -1569,7 +1569,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-11 19:54:08"
+            "time": "2016-03-17 16:11:57"
         },
         {
             "name": "psr/log",
@@ -1611,16 +1611,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.4",
+            "version": "v5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "2c167426fc24f9de116345195bc1697a748ee847"
+                "reference": "3a160355bb1364da55ed9e415c1aa1fa8d457b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/2c167426fc24f9de116345195bc1697a748ee847",
-                "reference": "2c167426fc24f9de116345195bc1697a748ee847",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/3a160355bb1364da55ed9e415c1aa1fa8d457b6f",
+                "reference": "3a160355bb1364da55ed9e415c1aa1fa8d457b6f",
                 "shasum": ""
             },
             "require": {
@@ -1659,7 +1659,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-02-12 16:21:30"
+            "time": "2016-03-15 16:21:41"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -1874,16 +1874,16 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "v2.7.1",
+            "version": "v2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/assetic-bundle.git",
-                "reference": "d885ec8451d5a7b077bda81bb19ac9fbff9cdc76"
+                "reference": "aa5b4f8b712f38745928fa845ddb73300bb2af6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/assetic-bundle/zipball/d885ec8451d5a7b077bda81bb19ac9fbff9cdc76",
-                "reference": "d885ec8451d5a7b077bda81bb19ac9fbff9cdc76",
+                "url": "https://api.github.com/repos/symfony/assetic-bundle/zipball/aa5b4f8b712f38745928fa845ddb73300bb2af6d",
+                "reference": "aa5b4f8b712f38745928fa845ddb73300bb2af6d",
                 "shasum": ""
             },
             "require": {
@@ -1940,20 +1940,20 @@
                 "compression",
                 "minification"
             ],
-            "time": "2015-11-17 09:45:47"
+            "time": "2015-12-28 13:12:39"
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.9.0",
+            "version": "v2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/monolog-bundle.git",
-                "reference": "27c2e3eaec7a0ba3462f99ea92678cbfc7b146e4"
+                "reference": "82fd8f36e2cccbe94faf237403c48052d4d4b77e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/27c2e3eaec7a0ba3462f99ea92678cbfc7b146e4",
-                "reference": "27c2e3eaec7a0ba3462f99ea92678cbfc7b146e4",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/82fd8f36e2cccbe94faf237403c48052d4d4b77e",
+                "reference": "82fd8f36e2cccbe94faf237403c48052d4d4b77e",
                 "shasum": ""
             },
             "require": {
@@ -1965,6 +1965,7 @@
                 "symfony/monolog-bridge": "~2.3|~3.0"
             },
             "require-dev": {
+                "phpunit/phpunit": "^4.8",
                 "symfony/console": "~2.3|~3.0",
                 "symfony/yaml": "~2.3|~3.0"
             },
@@ -1999,7 +2000,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2016-03-01 17:53:42"
+            "time": "2016-03-13 15:55:56"
         },
         {
             "name": "symfony/polyfill-intl-icu",
@@ -2477,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "71d53179c8b7ad43ad8bd2c931a0cd4dc5c4a766"
+                "reference": "e670348b9b2baf1db00300c38228fb616ae093dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/71d53179c8b7ad43ad8bd2c931a0cd4dc5c4a766",
-                "reference": "71d53179c8b7ad43ad8bd2c931a0cd4dc5c4a766",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/e670348b9b2baf1db00300c38228fb616ae093dc",
+                "reference": "e670348b9b2baf1db00300c38228fb616ae093dc",
                 "shasum": ""
             },
             "require": {
@@ -2540,7 +2541,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-03-11 11:09:56"
+            "time": "2016-03-13 23:11:23"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2548,20 +2549,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/CoreBundle.git",
-                "reference": "b9c341060d16f14873444c1dd4eeb3ceb8c836cb"
+                "reference": "32164cde724bd1adc880667a043ef8cf37e828e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/b9c341060d16f14873444c1dd4eeb3ceb8c836cb",
-                "reference": "b9c341060d16f14873444c1dd4eeb3ceb8c836cb",
+                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/32164cde724bd1adc880667a043ef8cf37e828e6",
+                "reference": "32164cde724bd1adc880667a043ef8cf37e828e6",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "~2.4",
-                "doctrine/orm": "~2.4,>=2.4.5",
+                "doctrine/dbal": "*",
+                "doctrine/orm": "*",
                 "knplabs/knp-paginator-bundle": "~2.4",
                 "php": ">=5.5.9",
-                "symfony/symfony": "~3.0",
+                "symfony/symfony": "*",
                 "symfonyid/symfony-bundle-plugins": "dev-master"
             },
             "require-dev": {
@@ -2595,7 +2596,7 @@
                 "ihsanudin",
                 "toolkit"
             ],
-            "time": "2016-02-19 06:52:41"
+            "time": "2016-03-15 04:37:21"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",
@@ -2603,24 +2604,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/BundlePlugins.git",
-                "reference": "4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64"
+                "reference": "8b97265376d4a1d69806218cc9b3db139c7a82f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/BundlePlugins/zipball/4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64",
-                "reference": "4cdf5baccab1251f5c0bbbd0ec619ca49ac9ac64",
+                "url": "https://api.github.com/repos/SymfonyId/BundlePlugins/zipball/8b97265376d4a1d69806218cc9b3db139c7a82f9",
+                "reference": "8b97265376d4a1d69806218cc9b3db139c7a82f9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9",
-                "symfony/config": "~3.0",
-                "symfony/dependency-injection": "~3.0",
-                "symfony/http-kernel": "~3.0"
+                "symfony/config": "*",
+                "symfony/dependency-injection": "*",
+                "symfony/http-kernel": "*"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0",
                 "satooshi/php-coveralls": "^0.6.1",
-                "symfony/framework-bundle": "~3.0"
+                "symfony/framework-bundle": "*"
             },
             "type": "library",
             "autoload": {
@@ -2655,7 +2656,7 @@
                 "plugin",
                 "symfony"
             ],
-            "time": "2016-02-02 10:37:06"
+            "time": "2016-03-15 05:04:42"
         },
         {
             "name": "twig/twig",
