@@ -1525,16 +1525,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.3.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39"
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/ff76e1a660669bb56ba74ba0583fd8d41417bf39",
-                "reference": "ff76e1a660669bb56ba74ba0583fd8d41417bf39",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
                 "shasum": ""
             },
             "require": {
@@ -1569,7 +1569,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-17 16:11:57"
+            "time": "2016-03-18 20:34:03"
         },
         {
             "name": "psr/log",
@@ -1663,16 +1663,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.14",
+            "version": "v3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1"
+                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
-                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
+                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
                 "shasum": ""
             },
             "require": {
@@ -1721,7 +1721,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2016-03-01 10:50:07"
+            "time": "2016-03-22 12:39:08"
         },
         {
             "name": "sensio/generator-bundle",
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "e670348b9b2baf1db00300c38228fb616ae093dc"
+                "reference": "9bd5b3e004352d3f173272cf4856da5f3f64e5b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/e670348b9b2baf1db00300c38228fb616ae093dc",
-                "reference": "e670348b9b2baf1db00300c38228fb616ae093dc",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/9bd5b3e004352d3f173272cf4856da5f3f64e5b1",
+                "reference": "9bd5b3e004352d3f173272cf4856da5f3f64e5b1",
                 "shasum": ""
             },
             "require": {
@@ -2541,7 +2541,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-03-13 23:11:23"
+            "time": "2016-03-18 16:33:50"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2549,12 +2549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/CoreBundle.git",
-                "reference": "32164cde724bd1adc880667a043ef8cf37e828e6"
+                "reference": "9e2cc102aebb1c0f544e664c495da27859fa7bbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/32164cde724bd1adc880667a043ef8cf37e828e6",
-                "reference": "32164cde724bd1adc880667a043ef8cf37e828e6",
+                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/9e2cc102aebb1c0f544e664c495da27859fa7bbe",
+                "reference": "9e2cc102aebb1c0f544e664c495da27859fa7bbe",
                 "shasum": ""
             },
             "require": {
@@ -2596,7 +2596,7 @@
                 "ihsanudin",
                 "toolkit"
             ],
-            "time": "2016-03-15 04:37:21"
+            "time": "2016-03-21 03:18:47"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",
