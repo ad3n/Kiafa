@@ -1663,16 +1663,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.15",
+            "version": "v3.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782"
+                "reference": "507a15f56fa7699f6cc8c2c7de4080b19ce22546"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
-                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/507a15f56fa7699f6cc8c2c7de4080b19ce22546",
+                "reference": "507a15f56fa7699f6cc8c2c7de4080b19ce22546",
                 "shasum": ""
             },
             "require": {
@@ -1721,7 +1721,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2016-03-22 12:39:08"
+            "time": "2016-03-25 17:08:27"
         },
         {
             "name": "sensio/generator-bundle",
@@ -2549,12 +2549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/CoreBundle.git",
-                "reference": "9e2cc102aebb1c0f544e664c495da27859fa7bbe"
+                "reference": "a532a5b040fe6a59faedc2fe4fffa22d70d08669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/9e2cc102aebb1c0f544e664c495da27859fa7bbe",
-                "reference": "9e2cc102aebb1c0f544e664c495da27859fa7bbe",
+                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/a532a5b040fe6a59faedc2fe4fffa22d70d08669",
+                "reference": "a532a5b040fe6a59faedc2fe4fffa22d70d08669",
                 "shasum": ""
             },
             "require": {
@@ -2596,7 +2596,7 @@
                 "ihsanudin",
                 "toolkit"
             ],
-            "time": "2016-03-21 03:18:47"
+            "time": "2016-03-30 02:56:54"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",
@@ -2763,16 +2763,16 @@
     "packages-dev": [
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v2.8.3",
+            "version": "v2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "ee8ead4f78e21ed6c873d1cc19e141949d9ed493"
+                "reference": "a967db6a4cd5d276cf849d01b29dba559e149978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/ee8ead4f78e21ed6c873d1cc19e141949d9ed493",
-                "reference": "ee8ead4f78e21ed6c873d1cc19e141949d9ed493",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/a967db6a4cd5d276cf849d01b29dba559e149978",
+                "reference": "a967db6a4cd5d276cf849d01b29dba559e149978",
                 "shasum": ""
             },
             "require": {
@@ -2814,7 +2814,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-01-21 09:24:53"
+            "time": "2016-03-23 13:45:24"
         }
     ],
     "aliases": [],
