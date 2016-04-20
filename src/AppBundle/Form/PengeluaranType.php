@@ -50,12 +50,6 @@ class PengeluaranType extends AbstractType
                     'class' => 'form-control',
                 ),
             ))
-            ->add('save', SubmitType::class, array(
-                'label' => 'action.submit',
-                'attr' => array(
-                    'class' => 'btn btn-primary',
-                ),
-            ))
         ;
     }
 
