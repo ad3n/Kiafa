@@ -1,24 +1,24 @@
 services:
-    app.menu:
-        class: AppBundle\Menu\Builder
-        arguments:
-            - '@kernel'
-            - '@router'
-            - '@symfonian_id.admin.extractor.class_extractor'
-            - '@translator'
-            - '@security.authorization_checker'
-            - '%symfonian_id.admin.translation_domain%'
-
-    app.main_menu:
-        class: Knp\Menu\MenuItem
-        factory:
-            - '@app.menu'
-            - mainMenu
-        arguments:
-            - '@knp_menu.factory'
-            - []
-        tags:
-            - { name: knp_menu.menu, alias: app_main_menu }
+#    app.menu:
+#        class: AppBundle\Menu\Builder
+#        arguments:
+#            - '@kernel'
+#            - '@router'
+#            - '@symfonian_id.admin.extractor.class_extractor'
+#            - '@translator'
+#            - '@security.authorization_checker'
+#            - '%symfonian_id.admin.translation_domain%'
+#
+#    app.main_menu:
+#        class: Knp\Menu\MenuItem
+#        factory:
+#            - '@app.menu'
+#            - mainMenu
+#        arguments:
+#            - '@knp_menu.factory'
+#            - []
+#        tags:
+#            - { name: knp_menu.menu, alias: app_main_menu }
 
     app.listener.filter_result_listener:
         class: AppBundle\EventListener\FilterTransaksiResult
@@ -26,8 +26,8 @@ services:
             - [setContainer, ['@service_container']]
         tags:
             - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
-            - { name: kernel.event_listener, event: siab.filter_query, method: onFilterQuery }
-            - { name: kernel.event_listener, event: siab.pre_save, method: onFilterEntity }
+            - { name: kernel.event_listener, event: symfonyid.filter_query, method: onFilterQuery }
+            - { name: kernel.event_listener, event: symfonyid.pre_save, method: onFilterEntity }
 
     app.report.report_query:
         class: AppBundle\Report\ReportQuery

@@ -3,13 +3,13 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
+use SymfonyId\AdminBundle\Model\ModelInterface;
 
 /**
  * @ORM\Table(name="rekening")
  * @ORM\Entity
  */
-class Rekening implements EntityInterface
+class Rekening implements ModelInterface
 {
     /**
      * @ORM\Column(name="id", type="integer", nullable=false)

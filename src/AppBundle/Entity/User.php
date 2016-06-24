@@ -8,7 +8,7 @@ namespace AppBundle\Entity;
  */
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfonian\Indonesia\AdminBundle\User\User as BaseUser;
+use SymfonyId\AdminBundle\User\User as BaseUser;
 
 /**
  * @ORM\Entity()

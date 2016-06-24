@@ -3,15 +3,15 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
+use SymfonyId\AdminBundle\Model\ModelInterface;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use Symfonian\Indonesia\AdminBundle\Grid\Sortable;
+use SymfonyId\AdminBundle\Annotation\Sort;
 
 /**
  * @ORM\Table(name="donatur")
  * @ORM\Entity
  */
-class Donatur implements EntityInterface
+class Donatur implements ModelInterface
 {
     /**
      * @ORM\Column(name="id", type="integer", nullable=false)
@@ -23,7 +23,7 @@ class Donatur implements EntityInterface
     /**
      * @ORM\Column(name="full_name", type="string", length=77)
      * @NotBlank()
-     * @Sortable()
+     * @Sort()
      */
     protected $fullName;
 

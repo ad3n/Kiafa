@@ -4,15 +4,14 @@ namespace AppBundle\Entity;
 
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
-use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
-use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\TimestampableInterface;
-use Symfony\Component\Validator\Constraints\Blank;
+use SymfonyId\AdminBundle\Model\ModelInterface;
+use SymfonyId\AdminBundle\Model\TimestampAwareInterface;
 
 /**
  * @ORM\Table(name="transaksi")
  * @ORM\Entity
  */
-class Transaksi implements TimestampableInterface, EntityInterface
+class Transaksi implements TimestampAwareInterface, ModelInterface
 {
     const CREDIT = 'k';
 
