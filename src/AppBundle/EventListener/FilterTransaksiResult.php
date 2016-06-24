@@ -5,12 +5,11 @@ namespace AppBundle\EventListener;
 use AppBundle\Controller\DonasiController;
 use AppBundle\Controller\PengeluaranController;
 use AppBundle\Entity\Transaksi;
-use Symfonian\Indonesia\AdminBundle\Event\FilterEntityEvent;
-use Symfonian\Indonesia\AdminBundle\Event\FilterQueryEvent;
+use SymfonyId\AdminBundle\Event\FilterQueryEvent;
+use SymfonyId\AdminBundle\Event\FilterModelEvent;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
-use Symfony\Component\VarDumper\VarDumper;
 
 class FilterTransaksiResult implements ContainerAwareInterface
 {
@@ -55,10 +54,10 @@ class FilterTransaksiResult implements ContainerAwareInterface
         }
     }
 
-    public function onFilterEntity(FilterEntityEvent $event)
+    public function onFilterEntity(FilterModelEvent $event)
     {
         /** @var Transaksi $entity */
-        $entity = $event->getEntity();
+        $entity = $event->getModel();
 
         if ($this->controller instanceof PengeluaranController) {
             $posisiKas = $this->container->get('app.report.report_query')->getPosisiKas();
@@ -69,7 +68,7 @@ class FilterTransaksiResult implements ContainerAwareInterface
 
             if (!$entity->getId()) {
                 $entity->setAmount(-1 * $entity->getAmount());
-                $event->setEntity($entity);
+                $event->setModel($entity);
             }
         }
     }
