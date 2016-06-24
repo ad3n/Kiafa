@@ -1,6 +1,6 @@
 app:
     resource: '@AppBundle/Controller/'
-    type: siab
+    type: symfonyid
     prefix: /admin
 
 front:
@@ -9,5 +9,5 @@ front:
     prefix: /
 
 _symfonian_indonesia:
-    resource: '@SymfonianIndonesiaAdminBundle/Resources/config/routing.yml'
+    resource: '@SymfonyIdAdminBundle/Resources/config/routing.xml'
     prefix: /admin

@@ -6,6 +6,7 @@ use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use SymfonyId\AdminBundle\Model\ModelInterface;
 use SymfonyId\AdminBundle\Model\TimestampAwareInterface;
+use SymfonyId\AdminBundle\Annotation\Filter;
 
 /**
  * @ORM\Table(name="transaksi")
@@ -26,6 +27,7 @@ class Transaksi implements TimestampAwareInterface, ModelInterface
 
     /**
      * @ORM\Column(name="transaction_date", type="date")
+     * @Filter()
      */
     protected $transactionDate;
 

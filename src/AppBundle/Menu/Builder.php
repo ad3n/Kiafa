@@ -7,8 +7,8 @@ namespace AppBundle\Menu;
  */
 
 use Knp\Menu\FactoryInterface;
-use Symfonian\Indonesia\AdminBundle\Extractor\ClassExtractor;
-use Symfonian\Indonesia\AdminBundle\Menu\Builder as BaseMenu;
+use SymfonyId\AdminBundle\Extractor\ClassExtractor;
+use SymfonyId\AdminBundle\Menu\Builder as BaseMenu;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Routing\Router;
 use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;

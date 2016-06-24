@@ -4,11 +4,14 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
-use Symfonian\Indonesia\AdminBundle\Annotation\Grid;
-use Symfonian\Indonesia\AdminBundle\Annotation\Page;
-use Symfonian\Indonesia\AdminBundle\Annotation\Util;
-use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
+use SymfonyId\AdminBundle\Annotation\Crud;
+use SymfonyId\AdminBundle\Annotation\Grid;
+use SymfonyId\AdminBundle\Annotation\Page;
+use SymfonyId\AdminBundle\Annotation\Util;
+use SymfonyId\AdminBundle\Annotation\Column;
+use SymfonyId\AdminBundle\Annotation\Filter;
+use SymfonyId\AdminBundle\Annotation\DatePicker;
+use SymfonyId\AdminBundle\Controller\CrudController;
 
 /**
  * @Route("/pengeluaran")
@@ -18,11 +21,11 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  * @Crud(
  *     "AppBundle\Entity\Transaksi",
  *     form="AppBundle\Form\PengeluaranType",
- *     showFields={"transaction_date", "rekening", "amount", "note"},
+ *     showFields={"transactionDate", "rekening", "amount", "note"},
  *     list="AppBundle:Pengeluaran:list.html.twig"
  * )
- * @Grid({"transaction_date", "rekening", "amount"}, filters={"transaction_date"})
- * @Util(datePicker=true)
+ * @Grid(column=@Column({"transactionDate", "rekening", "amount"}), filter=@Filter({"transactionDate"}))
+ * @Util(datePicker=@DatePicker())
  */
 class PengeluaranController extends CrudController
 {
