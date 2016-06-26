@@ -43,17 +43,17 @@
                     {%- for i, v in action -%}
                         {%- if v is same as('GRID_ACTION_SHOW') -%}
                             <button data-record="{{- identifier[key] -}}" class="btn btn-labeled btn-success show">
-                                <span class="btn-label"><i class="fa fa-share"></i></span>{{- 'action.show' | trans({}, 'SymfonianIndonesiaAdminBundle') -}}
+                                <span class="btn-label"><i class="fa fa-share"></i></span>{{- 'action.show' | trans({}, 'SymfonyIdAdminBundle') -}}
                             </button>
                         {%- endif -%}
                         {%- if v is same as('GRID_ACTION_EDIT') -%}
                             <button data-record="{{- identifier[key] -}}" class="btn btn-labeled btn-warning edit">
-                                <span class="btn-label"><i class="fa fa-pencil"></i></span>{{- 'action.edit' | trans({}, 'SymfonianIndonesiaAdminBundle') -}}
+                                <span class="btn-label"><i class="fa fa-pencil"></i></span>{{- 'action.edit' | trans({}, 'SymfonyIdAdminBundle') -}}
                             </button>
                         {%- endif -%}
                         {%- if v is same as('GRID_ACTION_DELETE') -%}
                             <button data-record="{{- identifier[key] -}}" class="delete btn btn-labeled btn-danger delete">
-                                <span class="btn-label"><i class="fa fa-trash"></i></span>{{- 'action.delete' | trans({}, 'SymfonianIndonesiaAdminBundle') -}}
+                                <span class="btn-label"><i class="fa fa-trash"></i></span>{{- 'action.delete' | trans({}, 'SymfonyIdAdminBundle') -}}
                             </button>
                         {%- endif -%}
                     {%- endfor -%}
@@ -64,7 +64,7 @@
 </table>
 <div class="padding-top-7">
     <div class="pull-left">
-        <a href = "#" class="btn btn-primary add-new">{{- 'action.add' | trans({}, 'SymfonianIndonesiaAdminBundle') -}}</a>
+        <a href = "#" class="btn btn-primary add-new">{{- 'action.add' | trans({}, 'SymfonyIdAdminBundle') -}}</a>
     </div>
     <div class="pull-right">
         {{- knp_pagination_render(pagination) -}}
