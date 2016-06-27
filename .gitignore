@@ -17,3 +17,6 @@
 /web/uploads/
 /.idea/
 /deploy.php
+tests/
+web/css/
+web/js/
