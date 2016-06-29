@@ -1299,7 +1299,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "Knplabs",
+                    "name": "KnpLabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -2485,12 +2485,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/SymfonyIdAdminBundle.git",
-                "reference": "0ff2d6c196475da4d41ce6df3101b748b46b1e14"
+                "reference": "3e818c52d346ca93d47a1cefbde90b5c5a5e88e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/0ff2d6c196475da4d41ce6df3101b748b46b1e14",
-                "reference": "0ff2d6c196475da4d41ce6df3101b748b46b1e14",
+                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/3e818c52d346ca93d47a1cefbde90b5c5a5e88e6",
+                "reference": "3e818c52d346ca93d47a1cefbde90b5c5a5e88e6",
                 "shasum": ""
             },
             "require": {
@@ -2562,7 +2562,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-06-27 05:05:03"
+            "time": "2016-06-29 11:36:42"
         },
         {
             "name": "twig/twig",
