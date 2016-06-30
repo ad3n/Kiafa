@@ -1299,7 +1299,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -2351,16 +2351,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.0.7",
+            "version": "v3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "272ab3327c3d311aaa9f634730162ea00e9d9e93"
+                "reference": "814b8cdd556bc833f56f5d488534e17eec369337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/272ab3327c3d311aaa9f634730162ea00e9d9e93",
-                "reference": "272ab3327c3d311aaa9f634730162ea00e9d9e93",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/814b8cdd556bc833f56f5d488534e17eec369337",
+                "reference": "814b8cdd556bc833f56f5d488534e17eec369337",
                 "shasum": ""
             },
             "require": {
@@ -2428,7 +2428,7 @@
                 "doctrine/dbal": "~2.4",
                 "doctrine/doctrine-bundle": "~1.4",
                 "doctrine/orm": "~2.4,>=2.4.5",
-                "egulias/email-validator": "~1.2",
+                "egulias/email-validator": "~1.2,>=1.2.1",
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0|~2.0",
                 "phpdocumentor/reflection": "^1.0.7",
@@ -2477,7 +2477,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-06-06 16:52:46"
+            "time": "2016-06-30 16:30:29"
         },
         {
             "name": "symfonyid/symfonyid-admin-bundle",
@@ -2485,18 +2485,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/SymfonyIdAdminBundle.git",
-                "reference": "3e818c52d346ca93d47a1cefbde90b5c5a5e88e6"
+                "reference": "b13cb69f79f749759154598b1fa3479a674dc23d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/3e818c52d346ca93d47a1cefbde90b5c5a5e88e6",
-                "reference": "3e818c52d346ca93d47a1cefbde90b5c5a5e88e6",
+                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/b13cb69f79f749759154598b1fa3479a674dc23d",
+                "reference": "b13cb69f79f749759154598b1fa3479a674dc23d",
                 "shasum": ""
             },
             "require": {
                 "doctrine/doctrine-bundle": "^1.6",
                 "doctrine/doctrine-cache-bundle": "^1.2",
-                "doctrine/orm": "^2.5",
+                "doctrine/orm": "~2.5",
                 "friendsofsymfony/jsrouting-bundle": "^2.0@dev",
                 "friendsofsymfony/user-bundle": "^2.0@dev",
                 "knplabs/knp-menu-bundle": "^2.1@dev",
@@ -2505,7 +2505,7 @@
                 "sensio/distribution-bundle": "^5.0",
                 "sensio/framework-extra-bundle": "^3.0.2",
                 "symfony/monolog-bundle": "^2.8",
-                "symfony/symfony": "^3.0"
+                "symfony/symfony": "~3.0"
             },
             "require-dev": {
                 "doctrine/mongodb-odm": "~1.0",
@@ -2562,7 +2562,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-06-29 11:36:42"
+            "time": "2016-06-30 18:08:54"
         },
         {
             "name": "twig/twig",
@@ -2669,16 +2669,16 @@
     "packages-dev": [
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v2.8.7",
+            "version": "v2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "9d30940765450ccc58bc39f4bda30cc412101b4b"
+                "reference": "bc61b781fa7f07f9a2ed4e69b15d5c2238695fc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/9d30940765450ccc58bc39f4bda30cc412101b4b",
-                "reference": "9d30940765450ccc58bc39f4bda30cc412101b4b",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/bc61b781fa7f07f9a2ed4e69b15d5c2238695fc0",
+                "reference": "bc61b781fa7f07f9a2ed4e69b15d5c2238695fc0",
                 "shasum": ""
             },
             "require": {
@@ -2720,7 +2720,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2016-04-05 16:36:54"
+            "time": "2016-06-29 05:31:50"
         }
     ],
     "aliases": [],
